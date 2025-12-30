@@ -138,7 +138,6 @@ public class AccountPageTest extends BaseTest {
         LOG.info("Step 1: Navigate to Account Page");
         accountPage.openAccountPage();
 
-
         //Step 2: Update profile information with invalid email
         ExtentReportManager.info("Step 2: Verify error message is displayed for invalid email without '@'");
         LOG.info("Step 2: Verify error message is displayed for invalid email without '@'");

@@ -156,7 +156,7 @@ public class RegisterTest extends BaseTest {
                 // full name with special characters
                 {"Full name with special characters", "newuser123", "newuser123@example.com", "StrongPass123", "StrongPass123", "John@#", "FIELD", "name", "invalid"},
 
-                // invalid password (leading/trailing  spaces)
+                // invalid password (leading/trailing spaces)
                 {"Invalid password with leading/trailing spaces", "newuser123", "newuser123@example.com", "  StrongPass123  ", "  StrongPass123  ", "John S", "FIELD", "password", "no leading or trailing spaces"}
 
         };

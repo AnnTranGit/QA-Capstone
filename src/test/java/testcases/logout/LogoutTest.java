@@ -95,31 +95,31 @@ public class LogoutTest extends BaseTest {
     public void TC_Check_Token_Cleared_After_Logout() {
         String TOKEN_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiN2I4N2M4MzEtZjQxYS00OWRmLWJkOTctMDRmNTA1NTExODU0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiS2hhY2hIYW5nIiwibmJmIjoxNzY3MDkxMDMxLCJleHAiOjE3NjcwOTQ2MzF9.HMoBgFBilehuTr8_ozMorrIVB4myne9sWfMeTJ7buLA";
 
-        // 1) Login
+        // login
         loginAsValidUser();
 
-        // 2) Pre-condition: token must exist
+
+        // pre-condition: token must exist
         String tokenBefore = (String) ((org.openqa.selenium.JavascriptExecutor) driver)
                 .executeScript("return window.localStorage.getItem(arguments[0]);", TOKEN_KEY);
 
         Assert.assertNotNull(tokenBefore, "Pre-condition failed: accessToken not found before logout");
 
-        // 3) Logout OK
+        // logout ok
         homePage.getTopBarNavigation().clickLogoutButton();
         confirmModal.waitLogoutConfirmModalVisible();
         confirmModal.clickOkButton();
 
-        // 4) Assert token cleared
+        // assert token cleared
         String tokenAfter = (String) ((org.openqa.selenium.JavascriptExecutor) driver)
                 .executeScript("return window.localStorage.getItem(arguments[0]);", TOKEN_KEY);
 
         Assert.assertNull(tokenAfter, "accessToken should be removed from localStorage after logout");
 
 
-        // 5) Strong check: /account is blocked
+        // strong check: /account is blocked
         driver.get("https://demo1.cybersoft.edu.vn/account");
-        Assert.assertTrue(driver.getCurrentUrl().equals("https://demo1.cybersoft.edu.vn/")
-                        || driver.getCurrentUrl().contains("/sign-in"),
+        Assert.assertTrue(driver.getCurrentUrl().equals("https://demo1.cybersoft.edu.vn/"),
                 "After logout, /account should be blocked. Actual: " + driver.getCurrentUrl());
     }
 
