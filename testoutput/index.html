@@ -25,11 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-<<<<<<< HEAD
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
-=======
-      <span class="top-banner-font-1">1 suite</span>
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -43,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Gradle_suite" class="navigator-link">
-              <span class="suite-name border-passed">Gradle suite</span>
+              <span class="suite-name border-failed">Gradle suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -96,49 +92,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-<<<<<<< HEAD
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-=======
-                    <span class="method-stats">1 method,   1 passed</span>
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
+                    <span class="method-stats">9 methods, 9 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Gradle_suite" class="hide-methods passed suite-Gradle_suite"> (hide)</a> <!-- hide-methods passed suite-Gradle_suite -->
-                      <a href="#" panel-name="suite-Gradle_suite" class="show-methods passed suite-Gradle_suite"> (show)</a> <!-- show-methods passed suite-Gradle_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Gradle_suite" class="hide-methods failed suite-Gradle_suite"> (hide)</a> <!-- hide-methods failed suite-Gradle_suite -->
+                      <a href="#" panel-name="suite-Gradle_suite" class="show-methods failed suite-Gradle_suite"> (show)</a> <!-- show-methods failed suite-Gradle_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Gradle_suite">
+                    <div class="method-list-content failed suite-Gradle_suite">
                       <span>
-<<<<<<< HEAD
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.purchasepage.SeatSelectionTest" class="method navigator-link" hash-for-method="TC01_Verify_Seat_Selection_Functionality">TC01_Verify_Seat_Selection_Functionality</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Email already exists, tester_1767347305832, tester01@example.com, StrongPass123, StrongPass123, John...)">TC_Negative_Register_Test_Cases(Email already exists, tester_1767347305832, tester01@example.com, StrongPass123, StrongPass123, John...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.purchasepage.SeatSelectionTest" class="method navigator-link" hash-for-method="TC02_Verify_Summary_And_Booking_Success">TC02_Verify_Summary_And_Booking_Success</a> <!-- method navigator-link -->
-=======
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Register_Success_When_Account_Not_Exist">TC_Register_Success_When_Account_Not_Exist</a> <!-- method navigator-link -->
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Invalid email missing @, tester_1767347305832, qa.user.example.com, StrongPass123, StrongPass123, Jo...)">TC_Negative_Register_Test_Cases(Invalid email missing @, tester_1767347305832, qa.user.example.com, StrongPass123, StrongPass123, Jo...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Gradle_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Gradle_suite" class="hide-methods passed suite-Gradle_suite"> (hide)</a> <!-- hide-methods passed suite-Gradle_suite -->
-                      <a href="#" panel-name="suite-Gradle_suite" class="show-methods passed suite-Gradle_suite"> (show)</a> <!-- show-methods passed suite-Gradle_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Gradle_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.purchasepage.SeatSelectionTest" class="method navigator-link" hash-for-method="TC01_Verify_Booking_Requires_Login">TC01_Verify_Booking_Requires_Login</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Passwords do not match, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...)">TC_Negative_Register_Test_Cases(Passwords do not match, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Gradle_suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Password too short, tester_1767347305832, tester_1767347305832@example.com, 123, 123, John S, FIELD,...)">TC_Negative_Register_Test_Cases(Password too short, tester_1767347305832, tester_1767347305832@example.com, 123, 123, John S, FIELD,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Invalid password with leading/trailing spaces, tester_1767347305832, tester_1767347305832@example.co...)">TC_Negative_Register_Test_Cases(Invalid password with leading/trailing spaces, tester_1767347305832, tester_1767347305832@example.co...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Required fields empty, , , , , , FIELD, taiKhoan, required)">TC_Negative_Register_Test_Cases(Required fields empty, , , , , , FIELD, taiKhoan, required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Username already exists, tester01, tester_1767347305832@example.com, StrongPass123, StrongPass123, J...)">TC_Negative_Register_Test_Cases(Username already exists, tester01, tester_1767347305832@example.com, StrongPass123, StrongPass123, J...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Full name with special characters, tester_1767347305832, tester_1767347305832@example.com, StrongPas...)">TC_Negative_Register_Test_Cases(Full name with special characters, tester_1767347305832, tester_1767347305832@example.com, StrongPas...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gradle_suite" title="testcases.register.RegisterTest" class="method navigator-link" hash-for-method="TC_Negative_Register_Test_Cases(Full name with numbers, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...)">TC_Negative_Register_Test_Cases(Full name with numbers, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Gradle_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -150,92 +158,202 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Gradle_suite" class="panel Gradle_suite">
-          <div class="suite-Gradle_suite-class-passed">
+          <div class="suite-Gradle_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
               <img src="failed.png"/>
-              <span class="class-name">testcases.purchasepage.SeatSelectionTest</span>
-=======
-              <img src="passed.png"/>
               <span class="class-name">testcases.register.RegisterTest</span>
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-<<<<<<< HEAD
-                  <a name="TC01_Verify_Seat_Selection_Functionality">
-                  </a> <!-- TC01_Verify_Seat_Selection_Functionality -->
-                  <span class="method-name">TC01_Verify_Seat_Selection_Functionality</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[role=&apos;dialog&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+                  <a name="TC_Negative_Register_Test_Cases(Email already exists, tester_1767347305832, tester01@example.com, StrongPass123, StrongPass123, John...)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Email already exists, tester_1767347305832, tester01@example.com, StrongPass123, StrongPass123, John...) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Email already exists,tester_1767347305832,tester01@example.com,StrongPass123,StrongPass123,John S,GLOBAL,,email)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[role=&apos;alert&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.7.2&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53480}, goog:processID: 78638, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53480/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c7c6e13c5acb4b6167be74a93c8541f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb2db93e31c61b00e51cd7e86468fadf
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:24)
-	at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:28)
-	at pages.PurchasePage.isModalVisible(PurchasePage.java:106)
-	at testcases.purchasepage.SeatSelectionTest.TC01_Verify_Seat_Selection_Functionality(SeatSelectionTest.java:113)
+	at base.BasePage.getText(BasePage.java:71)
+	at base.BasePage.getText(BasePage.java:76)
+	at getGlobalErrorMessage(RegisterPage.java:129)
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:201)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
 ... Removed 40 stack frames
 </div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC02_Verify_Summary_And_Booking_Success">
-                  </a> <!-- TC02_Verify_Summary_And_Booking_Success -->
-                  <span class="method-name">TC02_Verify_Summary_And_Booking_Success</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[.=&apos;160&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+                  <a name="TC_Negative_Register_Test_Cases(Invalid email missing @, tester_1767347305832, qa.user.example.com, StrongPass123, StrongPass123, Jo...)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Invalid email missing @, tester_1767347305832, qa.user.example.com, StrongPass123, StrongPass123, Jo...) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Invalid email missing @,tester_1767347305832,qa.user.example.com,StrongPass123,StrongPass123,John S,FIELD,email,valid)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: email-helper-text (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.7.2&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53480}, goog:processID: 78638, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53480/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c7c6e13c5acb4b6167be74a93c8541f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb2db93e31c61b00e51cd7e86468fadf
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at base.BasePage.waitForElementToBeClickable(BasePage.java:33)
-	at base.BasePage.click(BasePage.java:61)
-	at base.BasePage.click(BasePage.java:66)
-	at pages.PurchasePage.selectSeat(PurchasePage.java:61)
-	at testcases.purchasepage.SeatSelectionTest.TC02_Verify_Summary_And_Booking_Success(SeatSelectionTest.java:196)
+	at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:24)
+	at base.BasePage.getText(BasePage.java:71)
+	at base.BasePage.getText(BasePage.java:76)
+	at pages.RegisterPage.getFieldErrorMessage(RegisterPage.java:123)
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:193)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
 ... Removed 40 stack frames
 </div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Register_Test_Cases(Passwords do not match, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Passwords do not match, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Passwords do not match,tester_1767347305832,tester_1767347305832@example.com,StrongPass123,StrongPass124,John S,FIELD,confirmPassWord,match)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected field error message for &apos;confirmPassWord&apos; to contain &apos;match&apos;, but got &apos;Mật khẩu không khớp !&apos; expected [true] but found [false]
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:194)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Register_Test_Cases(Password too short, tester_1767347305832, tester_1767347305832@example.com, 123, 123, John S, FIELD,...)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Password too short, tester_1767347305832, tester_1767347305832@example.com, 123, 123, John S, FIELD,...) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Password too short,tester_1767347305832,tester_1767347305832@example.com,123,123,John S,FIELD,matKhau,length)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected field error message for &apos;matKhau&apos; to contain &apos;length&apos;, but got &apos;Mật khẩu phải có ít nhất 6 kí tự !&apos; expected [true] but found [false]
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:194)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Register_Test_Cases(Invalid password with leading/trailing spaces, tester_1767347305832, tester_1767347305832@example.co...)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Invalid password with leading/trailing spaces, tester_1767347305832, tester_1767347305832@example.co...) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Invalid password with leading/trailing spaces,tester_1767347305832,tester_1767347305832@example.com,  StrongPass123  ,  StrongPass123  ,John S,FIELD,matKhau,no leading or trailing spaces)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: matKhau-helper-text (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.7.2&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb2db93e31c61b00e51cd7e86468fadf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:24)
+	at base.BasePage.getText(BasePage.java:71)
+	at base.BasePage.getText(BasePage.java:76)
+	at pages.RegisterPage.getFieldErrorMessage(RegisterPage.java:123)
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:193)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Register_Test_Cases(Required fields empty, , , , , , FIELD, taiKhoan, required)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Required fields empty, , , , , , FIELD, taiKhoan, required) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Required fields empty,,,,,,FIELD,taiKhoan,required)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected field error message for &apos;taiKhoan&apos; to contain &apos;required&apos;, but got &apos;Đây là trường bắt buộc !&apos; expected [true] but found [false]
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:194)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Register_Test_Cases(Username already exists, tester01, tester_1767347305832@example.com, StrongPass123, StrongPass123, J...)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Username already exists, tester01, tester_1767347305832@example.com, StrongPass123, StrongPass123, J...) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Username already exists,tester01,tester_1767347305832@example.com,StrongPass123,StrongPass123,John S,GLOBAL,,username already exists)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected global error message to contain &apos;username already exists&apos;, but got &apos;Tài khoản đã tồn tại!&apos; expected [true] but found [false]
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Register_Test_Cases(Full name with special characters, tester_1767347305832, tester_1767347305832@example.com, StrongPas...)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Full name with special characters, tester_1767347305832, tester_1767347305832@example.com, StrongPas...) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Full name with special characters,tester_1767347305832,tester_1767347305832@example.com,StrongPass123,StrongPass123,John@#,FIELD,hoTen,invalid)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: hoTen-helper-text (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.7.2&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb2db93e31c61b00e51cd7e86468fadf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:24)
+	at base.BasePage.getText(BasePage.java:71)
+	at base.BasePage.getText(BasePage.java:76)
+	at pages.RegisterPage.getFieldErrorMessage(RegisterPage.java:123)
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:193)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Register_Test_Cases(Full name with numbers, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...)">
+                  </a> <!-- TC_Negative_Register_Test_Cases(Full name with numbers, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...) -->
+                  <span class="method-name">TC_Negative_Register_Test_Cases</span>
+                  <span class="parameters">(Full name with numbers,tester_1767347305832,tester_1767347305832@example.com,StrongPass123,StrongPass123,John123,FIELD,hoTen,invalid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected field error message for &apos;hoTen&apos; to contain &apos;invalid&apos;, but got &apos;Họ và tên không chứa số !&apos; expected [true] but found [false]
+	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:194)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_Negative_Register_Test_Cases)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Gradle_suite-class-failed -->
-          <div class="suite-Gradle_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.purchasepage.SeatSelectionTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC01_Verify_Booking_Requires_Login">
-                  </a> <!-- TC01_Verify_Booking_Requires_Login -->
-                  <span class="method-name">TC01_Verify_Booking_Requires_Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-=======
-                  <a name="TC_Register_Success_When_Account_Not_Exist">
-                  </a> <!-- TC_Register_Success_When_Account_Not_Exist -->
-                  <span class="method-name">TC_Register_Success_When_Account_Not_Exist</span>
-                  <em>
-(TC_Register_Success_When_Account_Not_Exist)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
-          </div> <!-- suite-Gradle_suite-class-passed -->
         </div> <!-- panel Gradle_suite -->
         <div panel-name="test-xml-Gradle_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -247,11 +365,7 @@ Session ID: 9c7c6e13c5acb4b6167be74a93c8541f
 &lt;suite name=&quot;Gradle suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Gradle test&quot; verbose=&quot;0&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
-<<<<<<< HEAD
-      &lt;class name=&quot;testcases.purchasepage.SeatSelectionTest&quot;/&gt;
-=======
       &lt;class name=&quot;testcases.register.RegisterTest&quot;/&gt;
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Gradle test --&gt;
 &lt;/suite&gt; &lt;!-- Gradle suite --&gt;
@@ -291,34 +405,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(9);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
-data.setCell(0, 1, 'TC02_Verify_Summary_And_Booking_Success')
-data.setCell(0, 2, 'testcases.purchasepage.SeatSelectionTest')
-data.setCell(0, 3, 13166);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC01_Verify_Seat_Selection_Functionality')
-data.setCell(1, 2, 'testcases.purchasepage.SeatSelectionTest')
-data.setCell(1, 3, 13021);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC01_Verify_Booking_Requires_Login')
-data.setCell(2, 2, 'testcases.purchasepage.SeatSelectionTest')
-data.setCell(2, 3, 2868);
-=======
-data.setCell(0, 1, 'TC_Register_Success_When_Account_Not_Exist')
+data.setCell(0, 1, 'TC_Negative_Register_Test_Cases')
 data.setCell(0, 2, 'testcases.register.RegisterTest')
-data.setCell(0, 3, 3613);
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
+data.setCell(0, 3, 10517);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_Negative_Register_Test_Cases')
+data.setCell(1, 2, 'testcases.register.RegisterTest')
+data.setCell(1, 3, 10448);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_Negative_Register_Test_Cases')
+data.setCell(2, 2, 'testcases.register.RegisterTest')
+data.setCell(2, 3, 10439);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_Negative_Register_Test_Cases')
+data.setCell(3, 2, 'testcases.register.RegisterTest')
+data.setCell(3, 3, 10408);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_Negative_Register_Test_Cases')
+data.setCell(4, 2, 'testcases.register.RegisterTest')
+data.setCell(4, 3, 10404);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_Negative_Register_Test_Cases')
+data.setCell(5, 2, 'testcases.register.RegisterTest')
+data.setCell(5, 3, 262);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_Negative_Register_Test_Cases')
+data.setCell(6, 2, 'testcases.register.RegisterTest')
+data.setCell(6, 3, 175);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_Negative_Register_Test_Cases')
+data.setCell(7, 2, 'testcases.register.RegisterTest')
+data.setCell(7, 3, 170);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_Negative_Register_Test_Cases')
+data.setCell(8, 2, 'testcases.register.RegisterTest')
+data.setCell(8, 3, 140);
 window.suiteTableData['Gradle_suite']= { tableData: data, tableDiv: 'times-div-Gradle_suite'}
 return data;
 }
               </script>
-<<<<<<< HEAD
-              <span class="suite-total-time">Total running time: 29 seconds</span>
-=======
-              <span class="suite-total-time">Total running time: 3 seconds</span>
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
+              <span class="suite-total-time">Total running time: 52 seconds</span>
               <div id="times-div-Gradle_suite">
               </div> <!-- times-div-Gradle_suite -->
             </div> <!-- times-div -->
@@ -344,106 +472,184 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-<<<<<<< HEAD
-              <div class="chronological-class-name">testcases.purchasepage.SeatSelectionTest</div> <!-- chronological-class-name -->
-=======
               <div class="chronological-class-name">testcases.register.RegisterTest</div> <!-- chronological-class-name -->
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-<<<<<<< HEAD
-                <span class="method-start">61 ms</span>
+                <span class="method-start">66 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=SeatSelectionTest.TC01_Verify_Booking_Requires_Login()...)</span>
-                <span class="method-start">1174 ms</span>
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">1305 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupPages</span>
-                <span class="method-start">1790 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC01_Verify_Booking_Requires_Login</span>
-                <span class="method-start">1794 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=TC01_Verify_Booking_Requires_Login status=SUCCESS method=SeatSelectionTest.TC01_Ver...)</span>
-                <span class="method-start">4664 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=SeatSelectionTest.TC01_Verify_Seat_Selection_Functiona...)</span>
-                <span class="method-start">4666 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setupPages</span>
-                <span class="method-start">4701 ms</span>
+                <span class="method-start">2578 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TC01_Verify_Seat_Selection_Functionality</span>
-                <span class="method-start">4702 ms</span>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Required fields empty, , , , , , FIELD, taiKhoan, required)</span>
+                <span class="method-start">2644 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=TC01_Verify_Seat_Selection_Functionality status=FAILURE method=SeatSelectionTest.TC...)</span>
-                <span class="method-start">17729 ms</span>
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">3115 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=SeatSelectionTest.TC02_Verify_Summary_And_Booking_Succ...)</span>
-                <span class="method-start">17941 ms</span>
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">3359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">3395 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TC02_Verify_Summary_And_Booking_Success</span>
-                <span class="method-start">17969 ms</span>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Username already exists, tester01, tester_1767347305832@example.com, StrongPass123, StrongPass123, J...)</span>
+                <span class="method-start">3429 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setupPages</span>
-                <span class="method-start">17969 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=TC02_Verify_Summary_And_Booking_Success status=FAILURE method=SeatSelectionTest.TC0...)</span>
-                <span class="method-start">31136 ms</span>
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">14204 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">31204 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-suite after">
-                <span class="method-name">afterSuite</span>
-                <span class="method-start">31308 ms</span>
-=======
-                <span class="method-start">60 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC01_RegisterTest.TC_Register_Success_When_Account_Not...)</span>
-                <span class="method-start">2125 ms</span>
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">14428 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupPages</span>
-                <span class="method-start">2872 ms</span>
+                <span class="method-start">14455 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC_Register_Success_When_Account_Not_Exist</span>
-                <span class="method-start">2952 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Email already exists, tester_1767347305832, tester01@example.com, StrongPass123, StrongPass123, John...)</span>
+                <span class="method-start">14491 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=TC_Register_Success_When_Account_Not_Exist status=SUCCESS method=TC01_RegisterTest....)</span>
-                <span class="method-start">6569 ms</span>
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">25201 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">25434 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">25462 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Passwords do not match, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...)</span>
+                <span class="method-start">25495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">25913 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">26146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">26170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Invalid email missing @, tester_1767347305832, qa.user.example.com, StrongPass123, StrongPass123, Jo...)</span>
+                <span class="method-start">26201 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">36920 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">37139 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">37170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Password too short, tester_1767347305832, tester_1767347305832@example.com, 123, 123, John S, FIELD,...)</span>
+                <span class="method-start">37214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">37600 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">37843 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">37870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Full name with numbers, tester_1767347305832, tester_1767347305832@example.com, StrongPass123, Stron...)</span>
+                <span class="method-start">37909 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">38428 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">38673 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">38700 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Full name with special characters, tester_1767347305832, tester_1767347305832@example.com, StrongPas...)</span>
+                <span class="method-start">38734 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">49435 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang...)</span>
+                <span class="method-start">49648 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupPages</span>
+                <span class="method-start">49676 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_Negative_Register_Test_Cases(Invalid password with leading/trailing spaces, tester_1767347305832, tester_1767347305832@example.co...)</span>
+                <span class="method-start">49719 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Regi...)</span>
+                <span class="method-start">60388 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">6571 ms</span>
+                <span class="method-start">60620 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">6691 ms</span>
->>>>>>> f42ce23 (Handle extra cases for  register page and login page)
+                <span class="method-start">60743 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

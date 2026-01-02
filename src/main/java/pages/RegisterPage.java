@@ -4,6 +4,8 @@ import drivers.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.NoSuchElementException;
+
 
 public class RegisterPage extends CommonPage{
 
@@ -16,9 +18,12 @@ public class RegisterPage extends CommonPage{
     private By byBtnRegisterNewAcc = By.xpath("//button[.='Đăng ký']");
     private By byLblRegisterMsg = By.id("swal2-title");
 
+
     //pw eye icon
-    private By byPasswordEyeIcon = By.cssSelector("button#matKhau");
-    private By byConfirmPasswordEyeIcon = By.cssSelector("button#confirmPassWord");
+    private By byPasswordEyeIcon =
+            By.xpath("(//button[@type='button' and contains(@class, 'MuiIconButton-edgeEnd')])[1]");
+    private By byConfirmPasswordEyeIcon =
+            By.xpath("(//button[@type='button' and contains(@class, 'MuiIconButton-edgeEnd')])[2]");
 
     //already have account link
     private By alreadyHaveAccountLn = By.xpath("//h3[.='Bạn đã có tài khoản? Đăng nhập']");
@@ -26,6 +31,19 @@ public class RegisterPage extends CommonPage{
 
     private WebDriver driver() {
         return DriverFactory.getDriver();
+    }
+
+//    public boolean isRegisterSuccessful() {
+//        LOG.info("isRegisterPageDisplayed");
+//        return waitForVisibilityOfElementLocated(driver(), byLblRegisterMsg).isDisplayed();
+//    }
+    public boolean isRegisterSuccessful() {
+        LOG.info("Checking if registration was successful");
+        try {
+            return waitForVisibilityOfElementLocated(driver(), byLblRegisterMsg).isDisplayed();
+        }  catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
 
@@ -62,7 +80,6 @@ public class RegisterPage extends CommonPage{
         enterConfirmPassword(confirmPass);
         enterName(name);
     }
-
     public void clickRegister() {
         LOG.info("clickRegister");
         click(driver(), byBtnRegisterNewAcc);
@@ -105,10 +122,12 @@ public class RegisterPage extends CommonPage{
         return getText(driver(), fieldErrorMsg);
     }
 
-    public String getGlobalMessage() {
+    public String getGlobalErrorMessage() {
         By globalMsg = By.cssSelector("div[role='alert']");
-        LOG.info("getGlobalMessage");
+
+        LOG.info("getGlobalErrorMessage");
         return getText(driver(), globalMsg);
     }
 }
+
 
