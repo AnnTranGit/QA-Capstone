@@ -138,22 +138,22 @@ public class RegisterTest extends BaseTest {
                 {"Required fields empty", "", "", "", "", "", "FIELD", "taiKhoan", "Đây là trường bắt buộc !"},
 
                 // Username already exists (requires pre-created user)
-                {"Username already exists", "tester01", "tester_" + account + "@example.com", "StrongPass123", "StrongPass123", "John S", "GLOBAL", "", "Tài khoản đã tồn tại!"},
+                {"Username already exists", "tester_1767361499026", "tester_" + account + "@example.com", "StrongPass123", "StrongPass123", "John S", "GLOBAL", "", "Tài khoản đã tồn tại!"},
 
                 // Email already exists
-                {"Email already exists", "tester_" + account, "testA@gmail.com", "StrongPass123", "StrongPass123", "John S", "GLOBAL", "", "email"},
+                {"Email already exists", "tester_" + account, "testA@gmail.com", "StrongPass123", "StrongPass123", "John S", "GLOBAL", "", "Email đã tồn tại!"},
 
                 // Passwords do not match
-                {"Passwords do not match", "tester_" + account, "tester_" + account + "@example.com", "StrongPass123", "StrongPass124", "John S", "FIELD", "confirmPassWord", "match"},
+                {"Passwords do not match", "tester_" + account, "tester_" + account + "@example.com", "StrongPass123", "StrongPass124", "John S", "FIELD", "confirmPassWord", "Mật khẩu không khớp !"},
 
                 // Invalid email format
-                {"Invalid email missing @", "tester_" + account, "qa.user.example.com", "StrongPass123", "StrongPass123", "John S", "FIELD", "email", "valid"},
+                {"Invalid email missing @", "tester_" + account, "tester." + account + ".example.com", "StrongPass123", "StrongPass123", "John S", "FIELD", "email", "valid"},
 
                 // Password too short
-                {"Password too short", "tester_" + account, "tester_" + account + "@example.com", "123", "123", "John S", "FIELD", "matKhau", "length"},
+                {"Password too short", "tester_" + account, "tester_" + account + "@example.com", "123", "123", "John S", "FIELD", "matKhau", "Mật khẩu phải có ít nhất 6 kí tự !"},
 
                 //Full name with numbers
-                {"Full name with numbers", "tester_" + account, "tester_" + account + "@example.com", "StrongPass123", "StrongPass123", "John123", "FIELD", "hoTen", "invalid"},
+                {"Full name with numbers", "tester_" + account, "tester_" + account + "@example.com", "StrongPass123", "StrongPass123", "John123", "FIELD", "hoTen", "Họ và tên không chứa số !"},
 
                 // full name with special characters
                 {"Full name with special characters", "tester_" + account, "tester_" + account + "@example.com", "StrongPass123", "StrongPass123", "John@#", "FIELD", "hoTen", "invalid"},
@@ -179,21 +179,32 @@ public class RegisterTest extends BaseTest {
         ExtentReportManager.info("TC_Negative_Register_Test_Cases - " + testcaseName);
         LOG.info("TC_Negative_Register_Test_Cases - " + testcaseName);
         // Enter registration details
+        ExtentReportManager.info("Fill in"  + username + email + password + fullName);
+        LOG.info("Fill in username:"  + username + ", email: " + email + ", password" + password +", full name:"+ fullName);
         registerPage.fillForm(username, email, password, confirmPassword, fullName);
         // Click register button
+        ExtentReportManager.info("Click register button");
+        LOG.info("Click register button");
         registerPage.clickRegister();
 
-//        if (registerPage.isRegisterSuccessful()){
-//     Assert.fail("BUG FOUND: Registration succeeded for negative test case: " + testcaseName);
-//        }
 
 
         if (expectedType.equals("FIELD")) {
             // field-level validation
             String fieldErrorMsg = registerPage.getFieldErrorMessage(expectedField);
-            Assert.assertTrue(fieldErrorMsg.toLowerCase().contains(expectedContains.toLowerCase()),
-                    String.format("Expected field error message for '%s' to contain '%s', but got '%s'",
-                            expectedField, expectedContains, fieldErrorMsg));
+            if (fieldErrorMsg.isEmpty()) {
+                Assert.fail(
+                        "BUG FOUND: Expected validation error for field '" + expectedField +
+                                "' but no error message was displayed. Test case: " + testcaseName
+                );
+            }
+            Assert.assertTrue(
+                    fieldErrorMsg.toLowerCase().contains(expectedContains.toLowerCase()),
+                    String.format(
+                            "Expected field error message for '%s' to contain '%s', but got '%s'",
+                            expectedField, expectedContains, fieldErrorMsg
+                    )
+            );
 
 
         } else if (expectedType.equals("GLOBAL")) {

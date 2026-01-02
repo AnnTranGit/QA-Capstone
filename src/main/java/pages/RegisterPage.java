@@ -2,8 +2,14 @@ package pages;
 
 import drivers.DriverFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 
@@ -117,17 +123,35 @@ public class RegisterPage extends CommonPage{
 
 
     public String getFieldErrorMessage(String expectedField) {
-        By fieldErrorMsg = By.id(expectedField + "-helper-text");
-        LOG.info("getFieldErrorMessage");
-        return getText(driver(), fieldErrorMsg);
+        By errorHelper = By.id(expectedField + "-helper-text");
+
+        try {
+            WebDriverWait wait = new WebDriverWait(driver(), Duration.ofSeconds(5));
+            WebElement error = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(errorHelper)
+            );
+            return error.getText().trim();
+        } catch (TimeoutException e) {
+            return "";
+        }
     }
 
     public String getGlobalErrorMessage() {
+        LOG.info("getGlobalErrorMessage");
         By globalMsg = By.cssSelector("div[role='alert']");
 
-        LOG.info("getGlobalErrorMessage");
-        return getText(driver(), globalMsg);
-    }
+        WebDriverWait wait = new WebDriverWait(driver(), Duration.ofSeconds(10));
+        try {
+            return wait.until(d -> {
+                List<WebElement> els = d.findElements(globalMsg);
+                if (els.isEmpty()) return null;
+                String txt = els.get(0).getText().trim();
+                return txt.isEmpty() ? null : txt;
+            });
+        } catch (TimeoutException e) {
+            return ""; // không có/không kịp hiện
+        }
+    };
 }
 
 

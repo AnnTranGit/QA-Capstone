@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="0" failed="9" skipped="0">
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-02T16:48:24 ICT" name="Gradle suite" finished-at="2026-01-02T16:49:25 ICT" duration-ms="60665">
+  <suite started-at="2026-01-02T20:47:32 ICT" name="Gradle suite" finished-at="2026-01-02T20:48:06 ICT" duration-ms="34344">
     <groups>
     </groups>
-    <test started-at="2026-01-02T16:48:24 ICT" name="Gradle test" finished-at="2026-01-02T16:49:25 ICT" duration-ms="60665">
+    <test started-at="2026-01-02T20:47:32 ICT" name="Gradle test" finished-at="2026-01-02T20:48:06 ICT" duration-ms="34344">
       <class name="testcases.register.RegisterTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:24 ICT" name="beforeSuite" finished-at="2026-01-02T16:48:24 ICT" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:32 ICT" name="beforeSuite" finished-at="2026-01-02T20:47:32 ICT" duration-ms="52" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:24 ICT" name="beforeClass" finished-at="2026-01-02T16:48:25 ICT" duration-ms="1234" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:32 ICT" name="beforeClass" finished-at="2026-01-02T20:47:33 ICT" duration-ms="1255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:25 ICT" name="beforeMethod" finished-at="2026-01-02T16:48:27 ICT" duration-ms="1272" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:33 ICT" name="beforeMethod" finished-at="2026-01-02T20:47:35 ICT" duration-ms="1097" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:27 ICT" name="setupPages" finished-at="2026-01-02T16:48:27 ICT" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:35 ICT" name="setupPages" finished-at="2026-01-02T20:47:35 ICT" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:27 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:48:27 ICT" duration-ms="170" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:35 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:47:35 ICT" duration-ms="210" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,80 +74,25 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[required]]>
+                <![CDATA[Đây là trường bắt buộc !]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected field error message for 'taiKhoan' to contain 'required', but got 'Đây là trường bắt buộc !' expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected field error message for 'taiKhoan' to contain 'required', but got 'Đây là trường bắt buộc !' expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:194)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:27 ICT" name="afterMethod" finished-at="2026-01-02T16:48:27 ICT" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:35 ICT" name="afterMethod" finished-at="2026-01-02T20:47:35 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=SUCCESS method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:27 ICT" name="beforeMethod" finished-at="2026-01-02T16:48:27 ICT" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:35 ICT" name="beforeMethod" finished-at="2026-01-02T20:47:35 ICT" duration-ms="36" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,11 +103,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:27 ICT" name="setupPages" finished-at="2026-01-02T16:48:27 ICT" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:35 ICT" name="setupPages" finished-at="2026-01-02T20:47:35 ICT" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:27 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:48:38 ICT" duration-ms="10517" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:35 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:47:44 ICT" duration-ms="8918" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,12 +116,12 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="1">
               <value>
-                <![CDATA[tester01]]>
+                <![CDATA[tester_1767361499026]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tester_1767347305832@example.com]]>
+                <![CDATA[tester_1767361653915@example.com]]>
               </value>
             </param>
             <param index="3">
@@ -206,80 +151,25 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="8">
               <value>
-                <![CDATA[username already exists]]>
+                <![CDATA[Tài khoản đã tồn tại!]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected global error message to contain 'username already exists', but got 'Tài khoản đã tồn tại!' expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected global error message to contain 'username already exists', but got 'Tài khoản đã tồn tại!' expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:202)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:38 ICT" name="afterMethod" finished-at="2026-01-02T16:48:38 ICT" duration-ms="224" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:44 ICT" name="afterMethod" finished-at="2026-01-02T20:47:44 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=SUCCESS method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:38 ICT" name="beforeMethod" finished-at="2026-01-02T16:48:38 ICT" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:44 ICT" name="beforeMethod" finished-at="2026-01-02T20:47:44 ICT" duration-ms="40" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -290,11 +180,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:38 ICT" name="setupPages" finished-at="2026-01-02T16:48:39 ICT" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:44 ICT" name="setupPages" finished-at="2026-01-02T20:47:44 ICT" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:39 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:48:49 ICT" duration-ms="10439" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:44 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:47:48 ICT" duration-ms="4245" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -303,12 +193,12 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="1">
               <value>
-                <![CDATA[tester_1767347305832]]>
+                <![CDATA[tester_1767361653915]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tester01@example.com]]>
+                <![CDATA[testA@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -338,93 +228,25 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="8">
               <value>
-                <![CDATA[email]]>
+                <![CDATA[Email đã tồn tại!]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div[role='alert'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.2', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2db93e31c61b00e51cd7e86468fadf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[role='alert'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.2', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2db93e31c61b00e51cd7e86468fadf
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:24)
-at base.BasePage.getText(BasePage.java:71)
-at base.BasePage.getText(BasePage.java:76)
-at getGlobalErrorMessage(RegisterPage.java:129)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:201)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:49 ICT" name="afterMethod" finished-at="2026-01-02T16:48:49 ICT" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:48 ICT" name="afterMethod" finished-at="2026-01-02T20:47:48 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=SUCCESS method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:49 ICT" name="beforeMethod" finished-at="2026-01-02T16:48:49 ICT" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:48 ICT" name="beforeMethod" finished-at="2026-01-02T20:47:48 ICT" duration-ms="30" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -435,11 +257,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:49 ICT" name="setupPages" finished-at="2026-01-02T16:48:50 ICT" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:48 ICT" name="setupPages" finished-at="2026-01-02T20:47:48 ICT" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:50 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:48:50 ICT" duration-ms="175" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:48 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:47:48 ICT" duration-ms="170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -448,12 +270,12 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="1">
               <value>
-                <![CDATA[tester_1767347305832]]>
+                <![CDATA[tester_1767361653915]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tester_1767347305832@example.com]]>
+                <![CDATA[tester_1767361653915@example.com]]>
               </value>
             </param>
             <param index="3">
@@ -483,80 +305,25 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="8">
               <value>
-                <![CDATA[match]]>
+                <![CDATA[Mật khẩu không khớp !]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected field error message for 'confirmPassWord' to contain 'match', but got 'Mật khẩu không khớp !' expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected field error message for 'confirmPassWord' to contain 'match', but got 'Mật khẩu không khớp !' expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:194)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:50 ICT" name="afterMethod" finished-at="2026-01-02T16:48:50 ICT" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:48 ICT" name="afterMethod" finished-at="2026-01-02T20:47:48 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=SUCCESS method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:50 ICT" name="beforeMethod" finished-at="2026-01-02T16:48:50 ICT" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:48 ICT" name="beforeMethod" finished-at="2026-01-02T20:47:48 ICT" duration-ms="25" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -567,11 +334,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:50 ICT" name="setupPages" finished-at="2026-01-02T16:48:50 ICT" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:48 ICT" name="setupPages" finished-at="2026-01-02T20:47:48 ICT" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:48:50 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:49:01 ICT" duration-ms="10404" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:48 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:47:54 ICT" duration-ms="5283" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -580,12 +347,12 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="1">
               <value>
-                <![CDATA[tester_1767347305832]]>
+                <![CDATA[tester_1767361653915]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[qa.user.example.com]]>
+                <![CDATA[tester.1767361653915.example.com]]>
               </value>
             </param>
             <param index="3">
@@ -619,29 +386,14 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: email-helper-text (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.2', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2db93e31c61b00e51cd7e86468fadf]]>
+              <![CDATA[BUG FOUND: Expected validation error for field 'email' but no error message was displayed. Test case: Invalid email missing @]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: email-helper-text (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.2', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2db93e31c61b00e51cd7e86468fadf
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:24)
-at base.BasePage.getText(BasePage.java:71)
-at base.BasePage.getText(BasePage.java:76)
-at pages.RegisterPage.getFieldErrorMessage(RegisterPage.java:123)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:193)
+              <![CDATA[java.lang.AssertionError: BUG FOUND: Expected validation error for field 'email' but no error message was displayed. Test case: Invalid email missing @
+at org.testng.Assert.fail(Assert.java:111)
+at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -686,11 +438,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMa
 at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:01 ICT" name="afterMethod" finished-at="2026-01-02T16:49:01 ICT" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:54 ICT" name="afterMethod" finished-at="2026-01-02T20:47:54 ICT" duration-ms="234" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -701,7 +453,7 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:01 ICT" name="beforeMethod" finished-at="2026-01-02T16:49:01 ICT" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:54 ICT" name="beforeMethod" finished-at="2026-01-02T20:47:54 ICT" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -712,11 +464,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:01 ICT" name="setupPages" finished-at="2026-01-02T16:49:01 ICT" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:54 ICT" name="setupPages" finished-at="2026-01-02T20:47:54 ICT" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:01 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:49:01 ICT" duration-ms="140" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:54 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:47:54 ICT" duration-ms="179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -725,12 +477,12 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="1">
               <value>
-                <![CDATA[tester_1767347305832]]>
+                <![CDATA[tester_1767361653915]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tester_1767347305832@example.com]]>
+                <![CDATA[tester_1767361653915@example.com]]>
               </value>
             </param>
             <param index="3">
@@ -760,80 +512,25 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="8">
               <value>
-                <![CDATA[length]]>
+                <![CDATA[Mật khẩu phải có ít nhất 6 kí tự !]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected field error message for 'matKhau' to contain 'length', but got 'Mật khẩu phải có ít nhất 6 kí tự !' expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected field error message for 'matKhau' to contain 'length', but got 'Mật khẩu phải có ít nhất 6 kí tự !' expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:194)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:02 ICT" name="afterMethod" finished-at="2026-01-02T16:49:02 ICT" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:54 ICT" name="afterMethod" finished-at="2026-01-02T20:47:54 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=SUCCESS method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:02 ICT" name="beforeMethod" finished-at="2026-01-02T16:49:02 ICT" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:54 ICT" name="beforeMethod" finished-at="2026-01-02T20:47:54 ICT" duration-ms="26" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -844,11 +541,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:02 ICT" name="setupPages" finished-at="2026-01-02T16:49:02 ICT" duration-ms="39" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:54 ICT" name="setupPages" finished-at="2026-01-02T20:47:55 ICT" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:02 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:49:02 ICT" duration-ms="262" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:55 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:47:55 ICT" duration-ms="177" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -857,12 +554,12 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="1">
               <value>
-                <![CDATA[tester_1767347305832]]>
+                <![CDATA[tester_1767361653915]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tester_1767347305832@example.com]]>
+                <![CDATA[tester_1767361653915@example.com]]>
               </value>
             </param>
             <param index="3">
@@ -892,80 +589,25 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="8">
               <value>
-                <![CDATA[invalid]]>
+                <![CDATA[Họ và tên không chứa số !]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected field error message for 'hoTen' to contain 'invalid', but got 'Họ và tên không chứa số !' expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected field error message for 'hoTen' to contain 'invalid', but got 'Họ và tên không chứa số !' expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:194)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:02 ICT" name="afterMethod" finished-at="2026-01-02T16:49:03 ICT" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:55 ICT" name="afterMethod" finished-at="2026-01-02T20:47:55 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=FAILURE method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Negative_Register_Test_Cases status=SUCCESS method=RegisterTest.TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:03 ICT" name="beforeMethod" finished-at="2026-01-02T16:49:03 ICT" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:55 ICT" name="beforeMethod" finished-at="2026-01-02T20:47:55 ICT" duration-ms="33" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -976,11 +618,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:03 ICT" name="setupPages" finished-at="2026-01-02T16:49:03 ICT" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:55 ICT" name="setupPages" finished-at="2026-01-02T20:47:55 ICT" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:03 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:49:13 ICT" duration-ms="10448" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:47:55 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:48:00 ICT" duration-ms="5285" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -989,12 +631,12 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="1">
               <value>
-                <![CDATA[tester_1767347305832]]>
+                <![CDATA[tester_1767361653915]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tester_1767347305832@example.com]]>
+                <![CDATA[tester_1767361653915@example.com]]>
               </value>
             </param>
             <param index="3">
@@ -1028,29 +670,14 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: hoTen-helper-text (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.2', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2db93e31c61b00e51cd7e86468fadf]]>
+              <![CDATA[BUG FOUND: Expected validation error for field 'hoTen' but no error message was displayed. Test case: Full name with special characters]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: hoTen-helper-text (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.2', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2db93e31c61b00e51cd7e86468fadf
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:24)
-at base.BasePage.getText(BasePage.java:71)
-at base.BasePage.getText(BasePage.java:76)
-at pages.RegisterPage.getFieldErrorMessage(RegisterPage.java:123)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:193)
+              <![CDATA[java.lang.AssertionError: BUG FOUND: Expected validation error for field 'hoTen' but no error message was displayed. Test case: Full name with special characters
+at org.testng.Assert.fail(Assert.java:111)
+at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -1095,11 +722,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMa
 at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:13 ICT" name="afterMethod" finished-at="2026-01-02T16:49:14 ICT" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:48:00 ICT" name="afterMethod" finished-at="2026-01-02T20:48:01 ICT" duration-ms="221" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1110,7 +737,7 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:14 ICT" name="beforeMethod" finished-at="2026-01-02T16:49:14 ICT" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:48:01 ICT" name="beforeMethod" finished-at="2026-01-02T20:48:01 ICT" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1121,11 +748,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:14 ICT" name="setupPages" finished-at="2026-01-02T16:49:14 ICT" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:48:01 ICT" name="setupPages" finished-at="2026-01-02T20:48:01 ICT" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:14 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T16:49:24 ICT" duration-ms="10408" status="FAIL">
+        <test-method signature="TC_Negative_Register_Test_Cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:48:01 ICT" name="TC_Negative_Register_Test_Cases" description="TC_Negative_Register_Test_Cases" data-provider="negativeRegisterData" finished-at="2026-01-02T20:48:06 ICT" duration-ms="5289" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1134,12 +761,12 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
             </param>
             <param index="1">
               <value>
-                <![CDATA[tester_1767347305832]]>
+                <![CDATA[tester_1767361653915]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tester_1767347305832@example.com]]>
+                <![CDATA[tester_1767361653915@example.com]]>
               </value>
             </param>
             <param index="3">
@@ -1173,29 +800,14 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: matKhau-helper-text (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.2', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2db93e31c61b00e51cd7e86468fadf]]>
+              <![CDATA[BUG FOUND: Expected validation error for field 'matKhau' but no error message was displayed. Test case: Invalid password with leading/trailing spaces]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: matKhau-helper-text (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.7.2', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: /var/folders/2x/c_66mg6d27s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60235}, goog:processID: 9509, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60235/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb2db93e31c61b00e51cd7e86468fadf
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at base.BasePage.waitForVisibilityOfElementLocated(BasePage.java:24)
-at base.BasePage.getText(BasePage.java:71)
-at base.BasePage.getText(BasePage.java:76)
-at pages.RegisterPage.getFieldErrorMessage(RegisterPage.java:123)
-at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:193)
+              <![CDATA[java.lang.AssertionError: BUG FOUND: Expected validation error for field 'matKhau' but no error message was displayed. Test case: Invalid password with leading/trailing spaces
+at org.testng.Assert.fail(Assert.java:111)
+at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -1240,11 +852,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMa
 at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Register_Test_Cases -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:24 ICT" name="afterMethod" finished-at="2026-01-02T16:49:25 ICT" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:48:06 ICT" name="afterMethod" finished-at="2026-01-02T20:48:06 ICT" duration-ms="233" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1255,11 +867,11 @@ at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerM
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:25 ICT" name="afterClass" finished-at="2026-01-02T16:49:25 ICT" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:48:06 ICT" name="afterClass" finished-at="2026-01-02T20:48:06 ICT" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T16:49:25 ICT" name="afterSuite" finished-at="2026-01-02T16:49:25 ICT" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases.register.RegisterTest@7a8fa663]" started-at="2026-01-02T20:48:07 ICT" name="afterSuite" finished-at="2026-01-02T20:48:07 ICT" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
