@@ -76,4 +76,13 @@ public class BasePage {
         return getText(driver, locator, ConstantTimeOut.DEFAULT_TIMEOUT);
     }
 
+    //presence of element located
+    public WebElement waitForPresenceOfElementLocated(WebDriver driver, By locator, long timeOut) {
+        LOG.info(String.format("waitForPresenceOfElementLocated: %s in %ds", locator, timeOut));
+        return getWait(driver, timeOut).until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+    public WebElement waitForPresenceOfElementLocated(WebDriver driver, By locator) {
+        return waitForPresenceOfElementLocated(driver, locator, ConstantTimeOut.DEFAULT_TIMEOUT);
+    }
+
 }

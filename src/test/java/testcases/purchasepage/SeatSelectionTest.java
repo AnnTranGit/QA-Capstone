@@ -13,12 +13,12 @@ public class SeatSelectionTest extends BaseTest {
     private PurchasePage purchasePage;
 
     // truyen showtimeID de chon lich chieu
-    private final String showtimeID = "46016";
+    private final String showtimeID = "43638";
 
     //truyen seatNumber de chon ghe
-    private final String REG1 = "20";
+    private final String REG1 = "33";
     private final String REG2 = "34";
-    private final String VIP1 = "124";
+    private final String VIP1 = "35";
     private LoginPage loginPage;
 
     @BeforeMethod
@@ -69,6 +69,7 @@ public class SeatSelectionTest extends BaseTest {
         Assert.assertTrue(seatTxt.contains(VIP1), "Summary does not contain VIP seat" + VIP1);
 
 
+
         // Verify total price calculation is correct
         ExtentReportManager.info("Verify total price calculation");
         LOG.info("Verify total price calculation");
@@ -82,6 +83,8 @@ public class SeatSelectionTest extends BaseTest {
         purchasePage.selectSeat(REG2);
         Assert.assertFalse(purchasePage.isSeatSelected(REG2), "Regular seat 2 is still selected after unselecting.");
 
+        ExtentReportManager.info("Total price updated after unselecting a seat");
+        LOG.info("Total price updated after unselecting a seat");
         String seatsAfter = purchasePage.getSummarySeatsTxt();
         Assert.assertFalse(seatsAfter.contains(REG2), "Summary still contains unselected Regular seat" + REG2);
         double expectedTotalAfter = purchasePage.getSeatPrice(REG1) + purchasePage.getSeatPrice(VIP1);
@@ -90,19 +93,25 @@ public class SeatSelectionTest extends BaseTest {
         // Try to select more than 8 seats and verify error modal
         ExtentReportManager.info("Try to select more than 8 available seats, validate modal error");
         LOG.info("Try to select more than 8 available seats, validate modal error");
-        String[] moreSeats = {"34", "21", "35", "36", "37", "33", "31"}; // choose 7 more available seats to exceed limit
+        String[] moreSeats = {"34", "36", "37", "38", "39", "40", "41"}; // choose 7 more available seats to exceed limit
         for (String seat : moreSeats) {
             purchasePage.selectSeat(seat);
         }
 
         // BUG: Error modal is not displayed when selecting more than 8 seats
-        if (!purchasePage.isModalVisible()) {
-            ExtentReportManager.fail("BUG: Error modal not shown when selecting more than 8 seats");
-            LOG.warn("BUG: Error modal not shown when selecting more than 8 seats");
-            return; // exit test to avoid failure
+        int selectedSeatCount = purchasePage.getSelectedSeatCount();
+        ExtentReportManager.info("Selected seats count: " + selectedSeatCount);
+        LOG.info("Selected seats count: {}", selectedSeatCount);
+
+        if (selectedSeatCount > 8) {
+            ExtentReportManager.fail(
+                    "BUG: User can select more than 8 seats. Actual selected: " + selectedSeatCount
+            );
+            LOG.warn("BUG: Selected seats = {}", selectedSeatCount);
+            Assert.fail("BUG: User can select more than 8 seats. Actual selected: " + selectedSeatCount);
         }
 
-        purchasePage.clickModalConfirmButton();
+
 
     }
 

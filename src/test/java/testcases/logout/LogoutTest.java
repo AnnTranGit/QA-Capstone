@@ -3,6 +3,7 @@ package testcases.logout;
 import base.BaseTest;
 import listeners.TestListener;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -11,6 +12,8 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.components.LogOutConfirmModal;
 import reports.ExtentReportManager;
+
+import java.time.Duration;
 
 @Listeners(TestListener.class)
 public class LogoutTest extends BaseTest {
@@ -29,26 +32,17 @@ public class LogoutTest extends BaseTest {
 
     private void loginAsValidUser() {
         homePage.getTopBarNavigation().navigateLoginPage();
-        loginPage.enterAccount("a68cf217-d33b-4132-b180-864697ac8427");
-        loginPage.enterPassword("Test123456@");
+        loginPage.enterAccount("tester_1767361653915");
+        loginPage.enterPassword("StrongPass123");
         loginPage.clickLogin();
         String actualLoginMsg = loginPage.getLoginMsg();
         Assert.assertEquals(actualLoginMsg, "Đăng nhập thành công", "Login message failed!");
 
     }
 
-    private String lsGet(String key) {
-        return (String) ((JavascriptExecutor) driver).executeScript(
-                "return window.localStorage.getItem(arguments[0]);", key);
-    }
-
-    private Long lsLength() {
-        return (Long) ((JavascriptExecutor) driver).executeScript(
-                "return window.localStorage.length;");
-    }
 
     @Test(description = "Logout modal - Cancel should stay logged in")
-    public void TC01_Logout_Modal_Cancel_Should_Stay_Logged_In() {
+    public void TC_Logout_Modal_Cancel_Should_Stay_Logged_In() {
 
         ExtentReportManager.info("Login with valid credentials");
         LOG.info("Login with valid credentials");
@@ -73,8 +67,8 @@ public class LogoutTest extends BaseTest {
     }
 
 
-    @Test
-    public void TC03_Double_Click_Logout_Should_Show_Only_One_Modal() {
+    @Test (description = "Double click Logout should show only one modal")
+    public void TC_Double_Click_Logout_Should_Show_Only_One_Modal() {
 
         ExtentReportManager.info("Login with valid credentials");
         loginAsValidUser();
@@ -84,6 +78,9 @@ public class LogoutTest extends BaseTest {
         homePage.getTopBarNavigation().clickLogoutButton();
 
         confirmModal.waitLogoutConfirmModalVisible();
+
+        ExtentReportManager.info("Only one modal should appear");
+        LOG.info("Only one modal should appear");
         Assert.assertTrue(confirmModal.isVisible(), "Modal should appear");
 
         // count elements to make sure only one modal exists
@@ -93,34 +90,60 @@ public class LogoutTest extends BaseTest {
 
     @Test(description = "Check token cleared after logout")
     public void TC_Check_Token_Cleared_After_Logout() {
-        String TOKEN_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiN2I4N2M4MzEtZjQxYS00OWRmLWJkOTctMDRmNTA1NTExODU0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiS2hhY2hIYW5nIiwibmJmIjoxNzY3MDkxMDMxLCJleHAiOjE3NjcwOTQ2MzF9.HMoBgFBilehuTr8_ozMorrIVB4myne9sWfMeTJ7buLA";
-
-        // login
+        //login
+        ExtentReportManager.info("Step 1: Login with valid credentials");
+        LOG.info("Step 1: Login with valid credentials");
         loginAsValidUser();
 
 
-        // pre-condition: token must exist
-        String tokenBefore = (String) ((org.openqa.selenium.JavascriptExecutor) driver)
-                .executeScript("return window.localStorage.getItem(arguments[0]);", TOKEN_KEY);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        Assert.assertNotNull(tokenBefore, "Pre-condition failed: accessToken not found before logout");
+        // pre-condition
+        ExtentReportManager.info("Step 2: Verify currentUser (token) exists in localStorage");
+        LOG.info("Step 2: Verify currentUser (token) exists in localStorage");
+        wait.until(d -> ((JavascriptExecutor) d)
+                .executeScript("return window.localStorage.getItem('currentUser');") != null);
+
+        // pre-condition
+        ExtentReportManager.info("Step 3: Verify accessToken exists inside currentUser");
+        LOG.info("Step 3: Verify accessToken exists inside currentUser");
+        String tokenBefore = (String) ((JavascriptExecutor) driver)
+                .executeScript(
+                        "const u = JSON.parse(window.localStorage.getItem('currentUser'));"
+                                + "return u ? u.accessToken : null;"
+                );
+
+        Assert.assertNotNull(
+                tokenBefore,
+                "Pre-condition failed: accessToken not found in currentUser before logout"
+        );
 
         // logout ok
         homePage.getTopBarNavigation().clickLogoutButton();
         confirmModal.waitLogoutConfirmModalVisible();
         confirmModal.clickOkButton();
 
-        // assert token cleared
-        String tokenAfter = (String) ((org.openqa.selenium.JavascriptExecutor) driver)
-                .executeScript("return window.localStorage.getItem(arguments[0]);", TOKEN_KEY);
-
-        Assert.assertNull(tokenAfter, "accessToken should be removed from localStorage after logout");
 
 
-        // strong check: /account is blocked
+        ExtentReportManager.info("Step 4: Verify currentUser is removed from localStorage after logout");
+        LOG.info("Step 4: Verify currentUser is removed from localStorage after logout");
+        wait.until(d -> ((JavascriptExecutor) d)
+                .executeScript("return window.localStorage.getItem('currentUser');") == null);
+
+        String currentUserAfter = (String) ((JavascriptExecutor) driver)
+                .executeScript("return window.localStorage.getItem('currentUser');");
+
+        Assert.assertNull(
+                currentUserAfter,
+                "currentUser should be removed from localStorage after logout"
+        );
+
+
+        ExtentReportManager.info("Step 5: /account should be blocked after logout");
+        LOG.info("Step 5: /account should be blocked after logout");
+        // strong check: /account   is blocked
         driver.get("https://demo1.cybersoft.edu.vn/account");
-        Assert.assertTrue(driver.getCurrentUrl().equals("https://demo1.cybersoft.edu.vn/"),
-                "After logout, /account should be blocked. Actual: " + driver.getCurrentUrl());
+        Assert.assertEquals(driver.getCurrentUrl(), "https://demo1.cybersoft.edu.vn/", "After logout, /account should be blocked. Actual: " + driver.getCurrentUrl());
     }
 
 

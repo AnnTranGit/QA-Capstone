@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LogOutConfirmModal extends BasePage {
 
-    private final By byLogOutConfirmModal = By.cssSelector(".swal2-popup.swal2-modal.swal2-icon-question.swal2-show]");
+    private final By byLogOutConfirmModal = By.cssSelector(".swal2-popup.swal2-modal.swal2-icon-question.swal2-show");
     private final By byLogOutModalTxt = By.xpath("//h2[normalize-space()='Bạn có muốn đăng xuất ?']");
     private final By byModalBtnOk = By.xpath("//button[normalize-space()='Đồng ý']");
     private final By byModalBtnCancel = By.cssSelector(".swal2-icon-question .swal2-cancel");

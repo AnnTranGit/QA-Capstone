@@ -1,10 +1,8 @@
 package pages;
 
 import drivers.DriverFactory;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class LoginPage extends CommonPage {
@@ -50,7 +48,6 @@ public class LoginPage extends CommonPage {
     }
 
 
-
     public void togglePasswordVisibility() {
         click(driver(), eyeIcon);
     }
@@ -60,8 +57,10 @@ public class LoginPage extends CommonPage {
     }
 
     public void checkRememberAccount() {
-        WebElement cb = waitForVisibilityOfElementLocated(driver(), rememberCheckbox);
-        if (!cb.isSelected()) cb.click();
+        WebElement checkbox = waitForPresenceOfElementLocated(driver(), rememberCheckbox);
+        JavascriptExecutor js = (JavascriptExecutor) driver();
+        js.executeScript("arguments[0].click();", checkbox);
+
     }
 
     public String getUsernameValue() {
@@ -74,4 +73,8 @@ public class LoginPage extends CommonPage {
     public String getInvalidCredsError()     { return getText(driver(), byInvalidCredsError); }
 
 
+    public void waitLoginMsgDisappear() {
+        LOG.info("waitLoginMsgDisappear");
+        waitForInvisibilityOfElementLocated(driver(), byLblLoginMsg);
+    }
 }

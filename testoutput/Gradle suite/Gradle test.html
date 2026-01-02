@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Gradle test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 02 20:47:32 ICT 2026</td>
+<td>Started on:</td><td>Sat Jan 03 00:30:59 ICT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34344 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10860 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Invalid email missing @, tester_1767361653915, tester.1767361653915.example.com, StrongPass123, StrongPass123, John S, FIELD, email, valid</td>
-<td><div><pre>java.lang.AssertionError: BUG FOUND: Expected validation error for field &apos;email&apos; but no error message was displayed. Test case: Invalid email missing @
-	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
+<td title='testcases.purchasepage.SeatSelectionTest.TC01_Verify_Seat_Selection_Functionality()'><b>TC01_Verify_Seat_Selection_Functionality</b><br>Test class: testcases.purchasepage.SeatSelectionTest</td>
+<td><div><pre>java.lang.AssertionError: BUG: User can select more than 8 seats. Actual selected: 9
+	at testcases.purchasepage.SeatSelectionTest.TC01_Verify_Seat_Selection_Functionality(SeatSelectionTest.java:111)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace49485418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace49485418'><pre>java.lang.AssertionError: BUG FOUND: Expected validation error for field &apos;email&apos; but no error message was displayed. Test case: Invalid email missing @
+... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace641449963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace641449963'><pre>java.lang.AssertionError: BUG: User can select more than 8 seats. Actual selected: 9
 	at org.testng.Assert.fail(Assert.java:111)
-	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
+	at testcases.purchasepage.SeatSelectionTest.TC01_Verify_Seat_Selection_Functionality(SeatSelectionTest.java:111)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -128,157 +128,8 @@ function toggleAllBoxes() {
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </pre></div></td>
-<td>5</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
-<tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Invalid password with leading/trailing spaces, tester_1767361653915, tester_1767361653915@example.com,   StrongPass123  ,   StrongPass123  , John S, FIELD, matKhau, no leading or trailing spaces</td>
-<td><div><pre>java.lang.AssertionError: BUG FOUND: Expected validation error for field &apos;matKhau&apos; but no error message was displayed. Test case: Invalid password with leading/trailing spaces
-	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1756064432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1756064432'><pre>java.lang.AssertionError: BUG FOUND: Expected validation error for field &apos;matKhau&apos; but no error message was displayed. Test case: Invalid password with leading/trailing spaces
-	at org.testng.Assert.fail(Assert.java:111)
-	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre></div></td>
-<td>5</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
-<tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Full name with special characters, tester_1767361653915, tester_1767361653915@example.com, StrongPass123, StrongPass123, John@#, FIELD, hoTen, invalid</td>
-<td><div><pre>java.lang.AssertionError: BUG FOUND: Expected validation error for field &apos;hoTen&apos; but no error message was displayed. Test case: Full name with special characters
-	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-... Removed 41 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace83554564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace83554564'><pre>java.lang.AssertionError: BUG FOUND: Expected validation error for field &apos;hoTen&apos; but no error message was displayed. Test case: Full name with special characters
-	at org.testng.Assert.fail(Assert.java:111)
-	at testcases.register.RegisterTest.TC_Negative_Register_Test_Cases(RegisterTest.java:199)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre></div></td>
-<td>5</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Full name with numbers, tester_1767361653915, tester_1767361653915@example.com, StrongPass123, StrongPass123, John123, FIELD, hoTen, Họ và tên không chứa số !</td>
-<td></td>
-<td>0</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
-<tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Password too short, tester_1767361653915, tester_1767361653915@example.com, 123, 123, John S, FIELD, matKhau, Mật khẩu phải có ít nhất 6 kí tự !</td>
-<td></td>
-<td>0</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
-<tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Username already exists, tester_1767361499026, tester_1767361653915@example.com, StrongPass123, StrongPass123, John S, GLOBAL, , Tài khoản đã tồn tại!</td>
-<td></td>
 <td>8</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
-<tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Required fields empty, , , , , , FIELD, taiKhoan, Đây là trường bắt buộc !</td>
-<td></td>
-<td>0</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
-<tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Passwords do not match, tester_1767361653915, tester_1767361653915@example.com, StrongPass123, StrongPass124, John S, FIELD, confirmPassWord, Mật khẩu không khớp !</td>
-<td></td>
-<td>0</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
-<tr>
-<td title='testcases.register.RegisterTest.TC_Negative_Register_Test_Cases()'><b>TC_Negative_Register_Test_Cases</b><br>Test class: testcases.register.RegisterTest<br>Test method: TC_Negative_Register_Test_Cases<br>Parameters: Email already exists, tester_1767361653915, testA@gmail.com, StrongPass123, StrongPass123, John S, GLOBAL, , Email đã tồn tại!</td>
-<td></td>
-<td>4</td>
-<td>testcases.register.RegisterTest@7a8fa663</td></tr>
+<td>testcases.purchasepage.SeatSelectionTest@56c9bbd8</td></tr>
 </table><p>
 </body>
 </html>
