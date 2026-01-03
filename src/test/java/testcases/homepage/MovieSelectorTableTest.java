@@ -3,7 +3,6 @@ package testcases.homepage;
 import base.BaseTest;
 import listeners.TestListener;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.HomePage;
@@ -17,7 +16,7 @@ public class MovieSelectorTableTest extends BaseTest {
 
 
 @Test
-public void TC01_Verify_MovieSelectorTable_Functionality() {
+public void TC_Verify_MovieSelectorTable_Functionality() {
     HomePage homePage = new HomePage();
     HomeMovieSelectorTable movieSelectorTable = new HomeMovieSelectorTable();
     MainHomeSection homeSection = new MainHomeSection();

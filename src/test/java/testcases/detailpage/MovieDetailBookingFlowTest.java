@@ -22,7 +22,7 @@ public class MovieDetailBookingFlowTest extends BaseTest {
 
 
 @Test(description = "Verify booking flow from movie detail page to purchase page")
-public void TC_MD_01_Verify_Booking_Flow_From_Detail_To_Purchase() {
+public void TC_Verify_Booking_Flow_From_Detail_To_Purchase() {
 
     String movieId = "9390";
 
@@ -57,13 +57,6 @@ public void TC_MD_01_Verify_Booking_Flow_From_Detail_To_Purchase() {
     movieDetailPage.clickFirstAvailableShowtime();
     Assert.assertTrue(driver.getCurrentUrl().contains("/purchase"), "Not redirected to ticket booking page");
 
-
-
-
-
-
-
 }
-
 
 }

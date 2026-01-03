@@ -43,7 +43,7 @@
 //        history.waitForBookingHistorySectionVisible();
 //
 //        // Rule: > 6 bookings => pagination visible
-//        // Bạn sẽ cần dữ liệu môi trường phù hợp (account có >6 bookings).
+//        // (account có >6 bookings).
 //        if (history.getBookingCountOnCurrentPage() >= 6) {
 //            Assert.assertTrue(history.isPaginationVisible(),
 //                    "Pagination should be visible when bookings > 6");

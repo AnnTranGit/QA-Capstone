@@ -3,7 +3,6 @@ package pages;
 import base.BasePage;
 import drivers.DriverFactory;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
@@ -125,8 +124,6 @@ public class AccountPage extends BasePage {
 //            // If blur fails, just continue
 //        }
 //    }
-
-
 
 
     public void setFullName(String fullName) {

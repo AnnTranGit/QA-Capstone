@@ -4,6 +4,7 @@ import base.BasePage;
 import drivers.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LogOutConfirmModal extends BasePage {
 
@@ -15,12 +16,15 @@ public class LogOutConfirmModal extends BasePage {
     private WebDriver driver() {
         return DriverFactory.getDriver();
     }
+
     public void waitLogoutConfirmModalVisible() {
         waitForVisibilityOfElementLocated(driver(), byLogOutConfirmModal);
     }
+
     public boolean isVisible() {
         return waitForVisibilityOfElementLocated(DriverFactory.getDriver(), byLogOutConfirmModal).isDisplayed();
     }
+
     public String getModalText() {
         LOG.info("getModalText");
         return waitForVisibilityOfElementLocated(driver(), byLogOutModalTxt).getText();
@@ -30,18 +34,22 @@ public class LogOutConfirmModal extends BasePage {
         LOG.info("clickOkButton");
         click(driver(), byModalBtnOk);
     }
+
     public void clickCancelButton() {
         LOG.info("clickCancelButton");
         click(driver(), byModalBtnCancel);
     }
-    public void waitModalClosed() {
+
+    public void waitConfirmModalClosed() {
         waitForInvisibilityOfElementLocated(driver(), byLogOutConfirmModal);
     }
 
 
-
-
-
-
+    public void waitOkModalClosed() {
+        waitForVisibilityOfElementLocated(driver(), By.xpath(
+                "//div[@id='swal2-content' and contains(normalize-space(.),'Cảm ơn bạn đã sử dụng TIX!')]"));
+        By button = By.xpath("//button[normalize-space()='OK']");
+       click(driver(), button);
+    }
 
 }

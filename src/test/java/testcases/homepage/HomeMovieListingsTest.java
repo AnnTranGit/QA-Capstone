@@ -24,7 +24,7 @@ public class HomeMovieListingsTest extends BaseTest {
 
 
     @Test
-    public void TC01_Verify_MovieListing_Displays() {
+    public void TC_Verify_MovieListing_Displays() {
         ExtentReportManager.info("Verify movie listing displays");
         LOG.info("Verify movie listing displays");
 
@@ -34,21 +34,22 @@ public class HomeMovieListingsTest extends BaseTest {
     }
 
     @Test
-    public void TC02_Verify_Hover_Shows_ActionButtons() {
-        ExtentReportManager.info("Hover shows action buttons");
-        LOG.info("Hover shows action buttons");
+    public void TC_Verify_Hover_Shows_Action_Buttons() {
+        ExtentReportManager.info("Hover shows action buttons successfully ");
+        LOG.info("Hover shows action buttons successfully ");
 
         //movieListing.scrollToMovieListing();
        homePage.getTopBarNavigation().clickShowtimes();
 
         movieListing.hoverMovieCard(movieTitle);
 
+        ExtentReportManager.info("Play / Buy Ticket Now buttons are visible after hover");
         Assert.assertTrue(movieListing.areActionButtonsVisible(movieTitle),
                 "Play / Buy Ticket Now buttons are not visible after hover");
     }
 
     @Test
-    public void TC03_Verify_PlayButton_Opens_TrailerModal() {
+    public void TC_Verify_PlayButton_Opens_TrailerModal() {
         ExtentReportManager.info("Play button opens trailer modal");
         LOG.info("Play button opens trailer modal");
 
@@ -57,12 +58,12 @@ public class HomeMovieListingsTest extends BaseTest {
 
         movieListing.hoverMovieCard(movieTitle);
         movieListing.clickPlay(movieTitle);
-
+        ExtentReportManager.info("Trailer modal is opened with video");
         Assert.assertTrue(movieListing.isTrailerModalOpened(), "Trailer modal is not opened or video is missing");
     }
 
     @Test
-    public void TC04_Verify_BuyButton_Redirects_To_Detail() {
+    public void TC_Verify_BuyButton_Redirects_To_Detail() {
         ExtentReportManager.info("Buy button redirects to detail");
         LOG.info("Buy button redirects to detail");
 
@@ -72,6 +73,7 @@ public class HomeMovieListingsTest extends BaseTest {
         movieListing.hoverMovieCard(movieTitle);
         movieListing.clickBuyTicketNow(movieTitle);
 
+        ExtentReportManager.info("Redirected to /detail URL successfully");
         Assert.assertTrue(driver.getCurrentUrl().contains("/detail/"),
                 "Not redirected to /detail URL");
     }

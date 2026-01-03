@@ -1,112 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-03T00:30:59 ICT" name="Gradle suite" finished-at="2026-01-03T00:31:10 ICT" duration-ms="10860">
+  <suite started-at="2026-01-03T20:59:40 ICT" name="Gradle suite" finished-at="2026-01-03T20:59:43 ICT" duration-ms="2882">
     <groups>
     </groups>
-    <test started-at="2026-01-03T00:30:59 ICT" name="Gradle test" finished-at="2026-01-03T00:31:10 ICT" duration-ms="10860">
-      <class name="testcases.purchasepage.SeatSelectionTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8]" started-at="2026-01-03T00:30:59 ICT" name="beforeSuite" finished-at="2026-01-03T00:30:59 ICT" duration-ms="54" status="PASS">
+    <test started-at="2026-01-03T20:59:40 ICT" name="Gradle test" finished-at="2026-01-03T20:59:43 ICT" duration-ms="2882">
+      <class name="testcases.logout.LogoutTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases.logout.LogoutTest@78a287ed]" started-at="2026-01-03T20:59:40 ICT" name="beforeSuite" finished-at="2026-01-03T20:59:40 ICT" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8]" started-at="2026-01-03T00:30:59 ICT" name="beforeClass" finished-at="2026-01-03T00:31:00 ICT" duration-ms="1360" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testcases.logout.LogoutTest@78a287ed]" started-at="2026-01-03T20:59:40 ICT" name="beforeClass" finished-at="2026-01-03T20:59:41 ICT" duration-ms="1170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8]" started-at="2026-01-03T00:31:00 ICT" name="beforeMethod" finished-at="2026-01-03T00:31:01 ICT" duration-ms="781" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:testcases.logout.LogoutTest@78a287ed]" started-at="2026-01-03T20:59:42 ICT" name="beforeMethod" finished-at="2026-01-03T20:59:42 ICT" duration-ms="649" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SeatSelectionTest.TC01_Verify_Seat_Selection_Functionality()[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=LogoutTest.TC_Check_Token_Cleared_After_Logout()[pri:0, instance:testcases.logout.LogoutTest@78a287ed] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8]" started-at="2026-01-03T00:31:01 ICT" name="setupPages" finished-at="2026-01-03T00:31:01 ICT" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:testcases.logout.LogoutTest@78a287ed]" started-at="2026-01-03T20:59:42 ICT" name="setUpPages" finished-at="2026-01-03T20:59:42 ICT" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPages -->
-        <test-method signature="TC01_Verify_Seat_Selection_Functionality()[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8]" started-at="2026-01-03T00:31:01 ICT" name="TC01_Verify_Seat_Selection_Functionality" finished-at="2026-01-03T00:31:09 ICT" duration-ms="8263" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[BUG: User can select more than 8 seats. Actual selected: 9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: BUG: User can select more than 8 seats. Actual selected: 9
-at org.testng.Assert.fail(Assert.java:111)
-at testcases.purchasepage.SeatSelectionTest.TC01_Verify_Seat_Selection_Functionality(SeatSelectionTest.java:111)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
-at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
-at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
-at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
-at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
-at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
-at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setUpPages -->
+        <test-method signature="TC_Check_Token_Cleared_After_Logout()[pri:0, instance:testcases.logout.LogoutTest@78a287ed]" started-at="2026-01-03T20:59:42 ICT" name="TC_Check_Token_Cleared_After_Logout" description="Check token cleared after logout" finished-at="2026-01-03T20:59:43 ICT" duration-ms="956" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC01_Verify_Seat_Selection_Functionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8]" started-at="2026-01-03T00:31:09 ICT" name="afterMethod" finished-at="2026-01-03T00:31:10 ICT" duration-ms="355" status="PASS">
+        </test-method> <!-- TC_Check_Token_Cleared_After_Logout -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.logout.LogoutTest@78a287ed]" started-at="2026-01-03T20:59:43 ICT" name="afterMethod" finished-at="2026-01-03T20:59:43 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC01_Verify_Seat_Selection_Functionality status=FAILURE method=SeatSelectionTest.TC01_Verify_Seat_Selection_Functionality()[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Check_Token_Cleared_After_Logout status=SUCCESS method=LogoutTest.TC_Check_Token_Cleared_After_Logout()[pri:0, instance:testcases.logout.LogoutTest@78a287ed] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8]" started-at="2026-01-03T00:31:10 ICT" name="afterClass" finished-at="2026-01-03T00:31:10 ICT" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.logout.LogoutTest@78a287ed]" started-at="2026-01-03T20:59:43 ICT" name="afterClass" finished-at="2026-01-03T20:59:43 ICT" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases.purchasepage.SeatSelectionTest@56c9bbd8]" started-at="2026-01-03T00:31:10 ICT" name="afterSuite" finished-at="2026-01-03T00:31:10 ICT" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases.logout.LogoutTest@78a287ed]" started-at="2026-01-03T20:59:43 ICT" name="afterSuite" finished-at="2026-01-03T20:59:43 ICT" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testcases.purchasepage.SeatSelectionTest -->
+      </class> <!-- testcases.logout.LogoutTest -->
     </test> <!-- Gradle test -->
   </suite> <!-- Gradle suite -->
 </testng-results>

@@ -3,18 +3,19 @@
 <suite name="Failed suite [Gradle suite]" verbose="0">
   <test thread-count="5" name="Gradle test(failed)" verbose="0">
     <classes>
-      <class name="testcases.purchasepage.SeatSelectionTest">
+      <class name="testcases.accountpage.AccountPageTest">
         <methods>
           <include name="afterMethod"/>
           <include name="afterClass"/>
+          <include name="setLoginPage"/>
           <include name="beforeSuite"/>
+          <include name="setUpPages"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
-          <include name="TC01_Verify_Seat_Selection_Functionality"/>
-          <include name="setupPages"/>
+          <include name="TC_Verify_Update_Profile_Failure_With_Invalid_Password_Having_Leading_Spaces"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- testcases.purchasepage.SeatSelectionTest -->
+      </class> <!-- testcases.accountpage.AccountPageTest -->
     </classes>
   </test> <!-- Gradle test(failed) -->
 </suite> <!-- Failed suite [Gradle suite] -->

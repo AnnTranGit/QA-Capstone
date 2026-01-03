@@ -5,6 +5,7 @@ import drivers.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import utils.SeatDataProvider;
 
 public class PurchasePage extends BasePage {
 
@@ -143,17 +144,6 @@ public class PurchasePage extends BasePage {
         return false;
     }
 
-
-//    public double getSeatPrice(String seatNumber) {
-//        // fixed price for VIP seat is 90000
-//        //if seat number from 35 to 126 is VIP
-//        int seatNum = Integer.parseInt(seatNumber);
-//        if (seatNum >= 35 && seatNum <= 126) {
-//            return 90000;
-//        } else {
-//            return 75000;
-//        }
-//    }
 
     public double getSeatPrice(String seatNumber) {
         int seatNum;

@@ -60,7 +60,7 @@ public class LogoutTest extends BaseTest {
 
         ExtentReportManager.info("Click Cancel > modal closes and user remains logged in");
         confirmModal.clickCancelButton();
-        confirmModal.waitModalClosed();
+        confirmModal.waitConfirmModalClosed();
 
         Assert.assertTrue(homePage.getTopBarNavigation().isLoggedInIndicatorVisible(),
                 "User should remain logged in after cancel");
@@ -145,6 +145,5 @@ public class LogoutTest extends BaseTest {
         driver.get("https://demo1.cybersoft.edu.vn/account");
         Assert.assertEquals(driver.getCurrentUrl(), "https://demo1.cybersoft.edu.vn/", "After logout, /account should be blocked. Actual: " + driver.getCurrentUrl());
     }
-
 
 }
