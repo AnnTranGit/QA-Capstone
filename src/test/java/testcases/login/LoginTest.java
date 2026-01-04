@@ -151,6 +151,7 @@ public class LoginTest extends BaseTest {
 
         // username should be remembered
         Assert.assertEquals(loginPage.getUsernameValue(), VALID_USER, "Username was not remembered");
+
     }
 
     @Test(description = "Press Enter key to submit login form")

@@ -106,7 +106,7 @@ public class RegisterTest extends BaseTest {
     }
 
     // Toggle pw eye icon
-    @Test(description = "TC_Toggle_Password_Eye_Icon")
+    @Test(description = "TC_Toggle_Password_Eye_Icon", priority = -1)
     public void TC_Toggle_Password_Eye_Icon() {
         ExtentReportManager.info("TC_Toggle_Password_Eye_Icon");
         LOG.info("TC_Toggle_Password_Eye_Icon");

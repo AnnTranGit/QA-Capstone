@@ -3,19 +3,23 @@
 <suite name="Failed suite [Gradle suite]" verbose="0">
   <test thread-count="5" name="Gradle test(failed)" verbose="0">
     <classes>
-      <class name="testcases.accountpage.AccountPageTest">
+      <class name="testcases.login.LoginTest">
         <methods>
           <include name="afterMethod"/>
-          <include name="afterClass"/>
-          <include name="setLoginPage"/>
-          <include name="beforeSuite"/>
+          <include name="TC_TogglePasswordVisibility"/>
           <include name="setUpPages"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
-          <include name="TC_Verify_Update_Profile_Failure_With_Invalid_Password_Having_Leading_Spaces"/>
+          <include name="TC_RememberAccount_PersistsUsername_AfterReload"/>
+          <include name="TC_PressEnterKey_LoginProceeds"/>
+          <include name="TC_Login_With_Blank_Fields"/>
+          <include name="TC_UsernameOnly_ShowsPasswordRequired"/>
+          <include name="navigateToLoginPage"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- testcases.accountpage.AccountPageTest -->
+      </class> <!-- testcases.login.LoginTest -->
     </classes>
   </test> <!-- Gradle test(failed) -->
 </suite> <!-- Failed suite [Gradle suite] -->
