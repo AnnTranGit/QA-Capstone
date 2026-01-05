@@ -4,10 +4,7 @@ import base.BaseTest;
 import drivers.DriverFactory;
 import listeners.TestListener;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.AccountPage;
 import pages.HomePage;
@@ -48,6 +45,19 @@ public class AccountPageTest extends BaseTest {
         Assert.assertEquals(actualLoginMsg, "Đăng nhập thành công", "Login message failed!");
 
     }
+    @AfterMethod(alwaysRun = true)
+    public void tearDown() {
+        try {
+            if (homePage.getTopBarNavigation().isLogoutLinkDisplayed()) {
+                homePage.getTopBarNavigation().clickLogoutButton();
+                confirmModal.waitLogoutConfirmModalVisible();
+                confirmModal.clickOkButton();
+                confirmModal.waitOkModalClosed();
+            }
+        } catch (Exception ignored){
+        }
+    }
+
 
 
     @Test(description = "TC_Verify_Update_Profile_Success_With_Valid_Data")
@@ -360,7 +370,6 @@ public class AccountPageTest extends BaseTest {
         Assert.assertEquals(passwordErrorMsg, "Mật khẩu không được chứa khoảng trắng !",
                 "Password validation message is incorrect");
     }
-
 
 
 

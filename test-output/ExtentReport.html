@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 4, 2026 03:52:34 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 5, 2026 02:39:21 PM</span></a>
 </li>
 </ul>
 </div>
@@ -75,25 +75,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Toggle_Password_Eye_Icon</p>
+            <p class="name">TC_Verify_Update_Profile_Failure_With_Invalid_Email_With_Spaces</p>
             <p class="text-sm">
-              <span>3:52:36 PM</span> / <span>00:00:27:374</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:39:22 PM</span> / <span>00:00:03:623</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC_Toggle_Password_Eye_Icon</h5>
-<span class='badge badge-success'>01.04.2026 3:52:36 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:03 PM</span>
-<span class='badge badge-default'>00:00:27:374</span>
+<h5 class="test-status text-fail">TC_Verify_Update_Profile_Failure_With_Invalid_Email_With_Spaces</h5>
+<span class='badge badge-success'>01.05.2026 2:39:22 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:39:26 PM</span>
+<span class='badge badge-default'>00:00:03:623</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -106,9 +106,59 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:03 PM</td>
+        <td>2:39:24 PM</td>
         <td>
-          TC_Toggle_Password_Eye_Icon
+          Step 0: Login first
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:25 PM</td>
+        <td>
+          Step 1: Navigate to Account Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:25 PM</td>
+        <td>
+          Step 2: Update profile information with invalid email
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:25 PM</td>
+        <td>
+          Step 2 Verify validation error message is displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:25 PM</td>
+        <td>
+          BUG: Invalid email with spaces is accepted and profile is updated successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:26 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_Verify_Update_Profile_Failure_With_Invalid_Email_With_Spaces_20260105_143926.png' src="screenshots/TC_Verify_Update_Profile_Failure_With_Invalid_Email_With_Spaces_20260105_143926.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:26 PM</td>
+        <td>
+          java.lang.AssertionError: BUG: Invalid email with spaces but no validation message is displayed expected [false] but found [true]
         </td>
       </tr>
   </tbody>
@@ -116,25 +166,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Already_Have_Account_Link_Redirects_Login</p>
+            <p class="name">TC_Verify_Update_Profile_Failure_With_Invalid_Email_Without_Special_Character</p>
             <p class="text-sm">
-              <span>3:53:03 PM</span> / <span>00:00:00:083</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:39:26 PM</span> / <span>00:00:01:374</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC_Already_Have_Account_Link_Redirects_Login</h5>
-<span class='badge badge-success'>01.04.2026 3:53:03 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:03 PM</span>
-<span class='badge badge-default'>00:00:00:083</span>
+<h5 class="test-status text-fail">TC_Verify_Update_Profile_Failure_With_Invalid_Email_Without_Special_Character</h5>
+<span class='badge badge-success'>01.05.2026 2:39:26 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:39:27 PM</span>
+<span class='badge badge-default'>00:00:01:374</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -147,9 +197,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:03 PM</td>
+        <td>2:39:26 PM</td>
         <td>
-          TC_Already_Have_Account_Link_Redirects_Login
+          Step 0: Login first
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:27 PM</td>
+        <td>
+          Step 1: Navigate to Account Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:27 PM</td>
+        <td>
+          Step 2: Verify error message is displayed for invalid email without '@'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:27 PM</td>
+        <td>
+          BUG FOUND: Invalid email 'testuser.gmail.com' but no validation message is displayed
         </td>
       </tr>
   </tbody>
@@ -162,9 +233,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Double_Click_Register_Only_One_Request</p>
+            <p class="name">TC_Verify_Update_Profile_Failure_With_Invalid_FullName</p>
             <p class="text-sm">
-              <span>3:53:04 PM</span> / <span>00:00:00:064</span>
+              <span>2:39:27 PM</span> / <span>00:00:01:356</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -172,10 +243,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC_Double_Click_Register_Only_One_Request</h5>
-<span class='badge badge-success'>01.04.2026 3:53:04 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:04 PM</span>
-<span class='badge badge-default'>00:00:00:064</span>
+<h5 class="test-status text-pass">TC_Verify_Update_Profile_Failure_With_Invalid_FullName</h5>
+<span class='badge badge-success'>01.05.2026 2:39:27 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:39:29 PM</span>
+<span class='badge badge-default'>00:00:01:356</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -188,9 +259,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:04 PM</td>
+        <td>2:39:27 PM</td>
         <td>
-          TC_Double_Click_Register_Only_One_Request
+          Step 0: Login first
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:28 PM</td>
+        <td>
+          Step 1: Navigate to Account Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:29 PM</td>
+        <td>
+          Step 2: Update profile information with invalid full name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:39:29 PM</td>
+        <td>
+          PASSED AS FULL NAME VALIDATION WORKS
         </td>
       </tr>
   </tbody>
@@ -198,25 +290,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="fail" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
+            <p class="name">TC_Verify_Update_Profile_Failure_With_Invalid_Password_Having_Leading_Spaces</p>
             <p class="text-sm">
-              <span>3:53:06 PM</span> / <span>00:00:00:180</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:39:29 PM</span> / <span>00:00:01:853</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:06 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:07 PM</span>
-<span class='badge badge-default'>00:00:00:180</span>
+<h5 class="test-status text-fail">TC_Verify_Update_Profile_Failure_With_Invalid_Password_Having_Leading_Spaces</h5>
+<span class='badge badge-success'>01.05.2026 2:39:29 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:39:31 PM</span>
+<span class='badge badge-default'>00:00:01:853</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -229,23 +321,59 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:06 PM</td>
+        <td>2:39:29 PM</td>
         <td>
-          TC_Negative_Register_Test_Cases - Required fields empty
+          Step 0: Login first
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:06 PM</td>
+        <td>2:39:30 PM</td>
         <td>
-          Fill in
+          Step 1: Navigate to Account Page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:07 PM</td>
+        <td>2:39:30 PM</td>
         <td>
-          Click register button
+          Step 2: Update profile information with invalid password having leading spaces
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:30 PM</td>
+        <td>
+          Step 2 Verify validation error message is displayed for invalid password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:30 PM</td>
+        <td>
+          BUG: Password with leading spaces is accepted and profile is updated
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:31 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_Verify_Update_Profile_Failure_With_Invalid_Password_Having_Leading_Spaces_20260105_143931.png' src="screenshots/TC_Verify_Update_Profile_Failure_With_Invalid_Password_Having_Leading_Spaces_20260105_143931.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:31 PM</td>
+        <td>
+          java.lang.AssertionError: BUG: Invalid password with leading spaces but no validation message is displayed expected [false] but found [true]
         </td>
       </tr>
   </tbody>
@@ -258,9 +386,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
+            <p class="name">TC_Verify_Update_Profile_Failure_With_Invalid_Password_Less_Than_6_Characters</p>
             <p class="text-sm">
-              <span>3:53:07 PM</span> / <span>00:00:00:170</span>
+              <span>2:39:31 PM</span> / <span>00:00:01:349</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -268,10 +396,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:07 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:07 PM</span>
-<span class='badge badge-default'>00:00:00:170</span>
+<h5 class="test-status text-pass">TC_Verify_Update_Profile_Failure_With_Invalid_Password_Less_Than_6_Characters</h5>
+<span class='badge badge-success'>01.05.2026 2:39:31 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:39:32 PM</span>
+<span class='badge badge-default'>00:00:01:349</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -284,23 +412,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:07 PM</td>
+        <td>2:39:31 PM</td>
         <td>
-          TC_Negative_Register_Test_Cases - Username already exists
+          Step 0: Login first
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:07 PM</td>
+        <td>2:39:31 PM</td>
         <td>
-          Fill intester_1767361499026tester_1767516786911@example.comStrongPass123John S
+          Step 1: Navigate to Account Page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:07 PM</td>
+        <td>2:39:32 PM</td>
         <td>
-          Click register button
+          Step 2: Update profile information with invalid password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:39:32 PM</td>
+        <td>
+          PASSED
         </td>
       </tr>
   </tbody>
@@ -308,25 +443,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="6"
+        <li class="test-item"  status="fail" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
+            <p class="name">TC_Verify_Update_Profile_Failure_With_Invalid_Phone_Less_Than_10_Digits</p>
             <p class="text-sm">
-              <span>3:53:07 PM</span> / <span>00:00:00:192</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:39:33 PM</span> / <span>00:00:02:387</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:07 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:08 PM</span>
-<span class='badge badge-default'>00:00:00:192</span>
+<h5 class="test-status text-fail">TC_Verify_Update_Profile_Failure_With_Invalid_Phone_Less_Than_10_Digits</h5>
+<span class='badge badge-success'>01.05.2026 2:39:33 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:39:35 PM</span>
+<span class='badge badge-default'>00:00:02:387</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -339,23 +474,59 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:07 PM</td>
+        <td>2:39:33 PM</td>
         <td>
-          TC_Negative_Register_Test_Cases - Email already exists
+          Step 0: Login first
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:07 PM</td>
+        <td>2:39:33 PM</td>
         <td>
-          Fill intester_1767516786911testA@gmail.comStrongPass123John S
+          Step 1: Navigate to Account Page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:08 PM</td>
+        <td>2:39:34 PM</td>
         <td>
-          Click register button
+          Step 2: Update profile information with invalid phone number
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:34 PM</td>
+        <td>
+          Step 2: Verify validation error message is displayed for invalid phone number
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:34 PM</td>
+        <td>
+          BUG: Phone number with less than 10 digits is accepted and profile is updated
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:35 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_Verify_Update_Profile_Failure_With_Invalid_Phone_Less_Than_10_Digits_20260105_143935.png' src="screenshots/TC_Verify_Update_Profile_Failure_With_Invalid_Phone_Less_Than_10_Digits_20260105_143935.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:35 PM</td>
+        <td>
+          java.lang.AssertionError: BUG: Invalid phone number (<10 digits) but no validation message is displayed expected [false] but found [true]
         </td>
       </tr>
   </tbody>
@@ -363,25 +534,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="7"
+        <li class="test-item"  status="fail" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
+            <p class="name">TC_Verify_Update_Profile_Failure_With_Invalid_Phone_More_Than_10_Digits</p>
             <p class="text-sm">
-              <span>3:53:08 PM</span> / <span>00:00:00:197</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:39:35 PM</span> / <span>00:00:01:828</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:08 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:08 PM</span>
-<span class='badge badge-default'>00:00:00:197</span>
+<h5 class="test-status text-fail">TC_Verify_Update_Profile_Failure_With_Invalid_Phone_More_Than_10_Digits</h5>
+<span class='badge badge-success'>01.05.2026 2:39:35 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:39:37 PM</span>
+<span class='badge badge-default'>00:00:01:828</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -394,23 +565,59 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:08 PM</td>
+        <td>2:39:35 PM</td>
         <td>
-          TC_Negative_Register_Test_Cases - Passwords do not match
+          Step 0: Login first
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:08 PM</td>
+        <td>2:39:36 PM</td>
         <td>
-          Fill intester_1767516786911tester_1767516786911@example.comStrongPass123John S
+          Step 1: Navigate to Account Page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:08 PM</td>
+        <td>2:39:36 PM</td>
         <td>
-          Click register button
+          Step 2: Update profile information with invalid phone number
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:36 PM</td>
+        <td>
+          Step 2: Verify validation error message is displayed for invalid phone number
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:36 PM</td>
+        <td>
+          BUG: Phone number with more than 10 digits is accepted and profile is updated
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:37 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_Verify_Update_Profile_Failure_With_Invalid_Phone_More_Than_10_Digits_20260105_143937.png' src="screenshots/TC_Verify_Update_Profile_Failure_With_Invalid_Phone_More_Than_10_Digits_20260105_143937.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:37 PM</td>
+        <td>
+          java.lang.AssertionError: BUG: Invalid phone number (>10 digits) but no validation message is displayed expected [false] but found [true]
         </td>
       </tr>
   </tbody>
@@ -418,25 +625,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="8"
+        <li class="test-item"  status="pass" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
+            <p class="name">TC_Verify_Update_Profile_Failure_With_Invalid_Phone_With_Characters</p>
             <p class="text-sm">
-              <span>3:53:08 PM</span> / <span>00:00:06:291</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>2:39:37 PM</span> / <span>00:00:01:281</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:08 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:15 PM</span>
-<span class='badge badge-default'>00:00:06:291</span>
+<h5 class="test-status text-pass">TC_Verify_Update_Profile_Failure_With_Invalid_Phone_With_Characters</h5>
+<span class='badge badge-success'>01.05.2026 2:39:37 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:39:38 PM</span>
+<span class='badge badge-default'>00:00:01:281</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -449,45 +656,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:08 PM</td>
+        <td>2:39:37 PM</td>
         <td>
-          TC_Negative_Register_Test_Cases - Invalid email missing @
+          Step 0: Login first
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:08 PM</td>
+        <td>2:39:38 PM</td>
         <td>
-          Fill intester_1767516786911tester.1767516786911.example.comStrongPass123John S
+          Step 1: Navigate to Account Page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:09 PM</td>
+        <td>2:39:38 PM</td>
         <td>
-          Click register button
+          Step 2: Update profile information with invalid phone number
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:15 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:39:38 PM</td>
         <td>
-          Screenshot captured
-    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='screenshots/TC_Negative_Register_Test_Cases_20260104_155315.png' src="screenshots/TC_Negative_Register_Test_Cases_20260104_155315.png">
-  
-    
-
-    </div></div>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:15 PM</td>
-        <td>
-          java.lang.AssertionError: BUG FOUND: Expected validation error for field 'email' but no error message was displayed. Test case: Invalid email missing @
+          PASSED
         </td>
       </tr>
   </tbody>
@@ -495,25 +687,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="9"
+        <li class="test-item"  status="fail" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
+            <p class="name">TC_Verify_Update_Profile_Success_With_Valid_Data</p>
             <p class="text-sm">
-              <span>3:53:15 PM</span> / <span>00:00:00:222</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:39:39 PM</span> / <span>00:00:24:436</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:15 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:15 PM</span>
-<span class='badge badge-default'>00:00:00:222</span>
+<h5 class="test-status text-fail">TC_Verify_Update_Profile_Success_With_Valid_Data</h5>
+<span class='badge badge-success'>01.05.2026 2:39:39 PM</span>
+<span class='badge badge-danger'>01.05.2026 2:40:03 PM</span>
+<span class='badge badge-default'>00:00:24:436</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -526,357 +718,115 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
+        <td>2:39:39 PM</td>
         <td>
-          TC_Negative_Register_Test_Cases - Password too short
+          Step 0: Login first
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
+        <td>2:39:40 PM</td>
         <td>
-          Fill intester_1767516786911tester_1767516786911@example.com123John S
+          Step 1: Navigate to Account Page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
+        <td>2:39:40 PM</td>
         <td>
-          Click register button
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
-            <p class="text-sm">
-              <span>3:53:15 PM</span> / <span>00:00:00:198</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:15 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:15 PM</span>
-<span class='badge badge-default'>00:00:00:198</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
-        <td>
-          TC_Negative_Register_Test_Cases - Full name with numbers
+          Step 2: Update profile information
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
+        <td>2:39:40 PM</td>
         <td>
-          Fill intester_1767516786911tester_1767516786911@example.comStrongPass123John123
+          Step 3: Verify password visibility toggle
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
+        <td>2:39:40 PM</td>
         <td>
-          Click register button
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="11"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
-            <p class="text-sm">
-              <span>3:53:15 PM</span> / <span>00:00:06:236</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:15 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:21 PM</span>
-<span class='badge badge-default'>00:00:06:236</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
-        <td>
-          TC_Negative_Register_Test_Cases - Full name with special characters
+          Step 4: read only fields check
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
+        <td>2:39:40 PM</td>
         <td>
-          Fill intester_1767516786911tester_1767516786911@example.comStrongPass123John@#
+          Step 5: Click Update button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:15 PM</td>
+        <td>2:39:40 PM</td>
         <td>
-          Click register button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:21 PM</td>
-        <td>
-          Screenshot captured
-    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='screenshots/TC_Negative_Register_Test_Cases_20260104_155321.png' src="screenshots/TC_Negative_Register_Test_Cases_20260104_155321.png">
-  
-    
-
-    </div></div>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:21 PM</td>
-        <td>
-          java.lang.AssertionError: BUG FOUND: Expected validation error for field 'hoTen' but no error message was displayed. Test case: Full name with special characters
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="12"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">TC_Negative_Register_Test_Cases</p>
-            <p class="text-sm">
-              <span>3:53:21 PM</span> / <span>00:00:06:243</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">TC_Negative_Register_Test_Cases</h5>
-<span class='badge badge-success'>01.04.2026 3:53:21 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:28 PM</span>
-<span class='badge badge-default'>00:00:06:243</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:21 PM</td>
-        <td>
-          TC_Negative_Register_Test_Cases - Invalid password with leading/trailing spaces
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:21 PM</td>
-        <td>
-          Fill intester_1767516786911tester_1767516786911@example.com  StrongPass123  John S
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:22 PM</td>
-        <td>
-          Click register button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:28 PM</td>
-        <td>
-          Screenshot captured
-    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='screenshots/TC_Negative_Register_Test_Cases_20260104_155328.png' src="screenshots/TC_Negative_Register_Test_Cases_20260104_155328.png">
-  
-    
-
-    </div></div>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:53:28 PM</td>
-        <td>
-          java.lang.AssertionError: BUG FOUND: Expected validation error for field 'matKhau' but no error message was displayed. Test case: Invalid password with leading/trailing spaces
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="13"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">TC_Register_Success_When_Account_Not_Exist</p>
-            <p class="text-sm">
-              <span>3:53:28 PM</span> / <span>00:00:03:471</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">TC_Register_Success_When_Account_Not_Exist</h5>
-<span class='badge badge-success'>01.04.2026 3:53:28 PM</span>
-<span class='badge badge-danger'>01.04.2026 3:53:31 PM</span>
-<span class='badge badge-default'>00:00:03:471</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:28 PM</td>
-        <td>
-          Step 1: Click link 'Đăng Ký'
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:28 PM</td>
-        <td>
-          Step 2: fill registration form with valid data
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:28 PM</td>
-        <td>
-          Step 7: Click register button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:28 PM</td>
-        <td>
-          Step 8: Verify user register successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:28 PM</td>
-        <td>
-          VP1: 'Đăng ký thành công' message display
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:30 PM</td>
-        <td>
-          VP2: Check register page still displays
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:30 PM</td>
-        <td>
-          VP3: Check new account logins successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:30 PM</td>
-        <td>
-          Click on Login button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:30 PM</td>
-        <td>
-          Enter account to login
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:30 PM</td>
-        <td>
-          Enter password to login
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:31 PM</td>
-        <td>
-          Click Login
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:53:31 PM</td>
-        <td>
-          VP3.1: 'Đăng nhập thành công' message displays
+          Step 6: Verify update success message
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:53:31 PM</td>
+        <td>2:39:41 PM</td>
         <td>
-          PASSED
+          All STEPS ABOVE PASSED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:41 PM</td>
+        <td>
+          Step 7: Refresh page and verify updated info is saved
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:42 PM</td>
+        <td>
+          BUG FOUND: Phone not updated after refresh. Expected: 0156456789, Found: 156456789
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:42 PM</td>
+        <td>
+          Step 8: Logout after test
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:39:42 PM</td>
+        <td>
+          Step 9: login again to verify updated password works
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:39:52 PM</td>
+        <td>
+          BUG FOUND: Cannot login with updated password. Login success message not displayed.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:40:03 PM</td>
+        <td>
+          Screenshot captured
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/TC_Verify_Update_Profile_Success_With_Valid_Data_20260105_144003.png' src="screenshots/TC_Verify_Update_Profile_Success_With_Valid_Data_20260105_144003.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:40:03 PM</td>
+        <td>
+          java.lang.AssertionError: BUG: Login failed after password update
         </td>
       </tr>
   </tbody>
@@ -898,25 +848,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 4, 2026 03:52:34 PM</h3>
+<h3>Jan 5, 2026 02:39:21 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 4, 2026 03:53:31 PM</h3>
+<h3>Jan 5, 2026 02:40:03 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>10</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>3</h3>
+<h3>6</h3>
 </div></div>
 </div>
 </div>
@@ -932,12 +882,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='76%'>
-<b>10</b> tests passed
+<div><small data-tooltip='33%'>
+<b>3</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='23%'><b>3</b> tests failed,
+<small data-tooltip='66%'><b>6</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -955,10 +905,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='2%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='6%'><b>4</b> events passed</small></div>
 <div>
-<small data-tooltip='12%'><b>6</b> events failed,
-<b data-tooltip='%'>42</b> others
+<small data-tooltip='28%'><b>17</b> events failed,
+<b data-tooltip='%'>38</b> others
 </small>
 </div>
 </div>
@@ -974,7 +924,7 @@
 </div></div>
 <script>
 var timeline = {
-"TC_Toggle_Password_Eye_Icon":27.374,"TC_Already_Have_Account_Link_Redirects_Login":0.083,"TC_Double_Click_Register_Only_One_Request":0.064,"TC_Negative_Register_Test_Cases":0.18,"TC_Negative_Register_Test_Cases":0.17,"TC_Negative_Register_Test_Cases":0.192,"TC_Negative_Register_Test_Cases":0.197,"TC_Negative_Register_Test_Cases":6.291,"TC_Negative_Register_Test_Cases":0.222,"TC_Negative_Register_Test_Cases":0.198,"TC_Negative_Register_Test_Cases":6.236,"TC_Negative_Register_Test_Cases":6.243,"TC_Register_Success_When_Account_Not_Exist":3.471
+"TC_Verify_Update_Profile_Failure_With_Invalid_Email_With_Spaces":3.623,"TC_Verify_Update_Profile_Failure_With_Invalid_Email_Without_Special_Character":1.374,"TC_Verify_Update_Profile_Failure_With_Invalid_FullName":1.356,"TC_Verify_Update_Profile_Failure_With_Invalid_Password_Having_Leading_Spaces":1.853,"TC_Verify_Update_Profile_Failure_With_Invalid_Password_Less_Than_6_Characters":1.349,"TC_Verify_Update_Profile_Failure_With_Invalid_Phone_Less_Than_10_Digits":2.387,"TC_Verify_Update_Profile_Failure_With_Invalid_Phone_More_Than_10_Digits":1.828,"TC_Verify_Update_Profile_Failure_With_Invalid_Phone_With_Characters":1.281,"TC_Verify_Update_Profile_Success_With_Valid_Data":24.436
 };
 </script>
 <div class="row">
@@ -1001,8 +951,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 10,
-failParent: 3,
+passParent: 3,
+failParent: 6,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1018,11 +968,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
-failEvents: 6,
+passEvents: 4,
+failEvents: 17,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 42
+infoEvents: 38
 };
 </script>        </div>
       </div>

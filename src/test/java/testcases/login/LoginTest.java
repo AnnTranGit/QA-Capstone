@@ -9,6 +9,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.components.LogOutConfirmModal;
 import reports.ExtentReportManager;
 
 
@@ -17,6 +18,7 @@ public class LoginTest extends BaseTest {
 
     private HomePage homePage;
     private LoginPage loginPage;
+    private LogOutConfirmModal confirmModal;
 
     //test data
     private final String VALID_USER = "tester_1767361653915";
@@ -26,11 +28,11 @@ public class LoginTest extends BaseTest {
     private final String INVALID_PASS = "wrong123";
 
 
-
     @BeforeClass
     public void setUpPages() {
         homePage = new HomePage();
         loginPage = new LoginPage();
+        confirmModal = new LogOutConfirmModal();
 
     }
 
@@ -78,6 +80,16 @@ public class LoginTest extends BaseTest {
         String actualProfileName = homePage.getTopBarNavigation().getUserProfileName();
         Assert.assertEquals(actualProfileName, expectedProfileName, "User profile name is incorrect!");
         ExtentReportManager.pass("PASSED");
+
+        // clean up: log out if logged in
+        if (homePage.getTopBarNavigation().isLogoutLinkDisplayed()) {
+            homePage.getTopBarNavigation().clickLogoutButton();
+            confirmModal.waitLogoutConfirmModalVisible();
+            confirmModal.clickOkButton();
+            confirmModal.waitOkModalClosed();
+
+        }
+
     }
 
 
@@ -98,14 +110,16 @@ public class LoginTest extends BaseTest {
 
     @Test(description = "Login with only username filled")
     public void TC_UsernameOnly_ShowsPasswordRequired() {
-        loginPage.enterAccount(VALID_USER);
+        ExtentReportManager.info("Step 2: enter account only");
+        LOG.info("Step 2: enter account only");
+        loginPage.clearAndEnterAccount(VALID_USER);
         loginPage.clickLogin();
 
         Assert.assertTrue(loginPage.getPasswordRequiredError().contains("Đây là trường bắt buộc !"),
                 "Password required error not shown");
     }
 
-    @Test (description = "Login with invalid data")
+    @Test(description = "Login with invalid data")
     public void TC_InvalidCredentials_ShowsError() {
         ExtentReportManager.info("Step 2: enter account with invalid data");
         LOG.info("Step 2: enter account with invalid data");
@@ -139,7 +153,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(loginPage.getPasswordType(), "text", "Password should be visible after toggle");
     }
 
-    @Test(description = "Remember account persists username after reload")
+    @Test(description = "Remember account persists username after reload", priority = 10)
     public void TC_RememberAccount_PersistsUsername_AfterReload() {
         loginPage.enterAccount(VALID_USER);
         loginPage.enterPassword(VALID_PASS);
@@ -147,8 +161,15 @@ public class LoginTest extends BaseTest {
         loginPage.clickLogin();
 
         // redirect to homepage and then back to login page
+        if (homePage.getTopBarNavigation().isLogoutLinkDisplayed()) {
+            homePage.getTopBarNavigation().clickLogoutButton();
+            confirmModal.waitLogoutConfirmModalVisible();
+            confirmModal.clickOkButton();
+            confirmModal.waitOkModalClosed();
+        }
         homePage.getTopBarNavigation().navigateLoginPage();
-
+        ExtentReportManager.info("VP: Verify username is remembered after page reload");
+        LOG.info("VP: Verify username is remembered after page reload");
         // username should be remembered
         Assert.assertEquals(loginPage.getUsernameValue(), VALID_USER, "Username was not remembered");
 
@@ -175,7 +196,18 @@ public class LoginTest extends BaseTest {
         LOG.info("VP2: Verify redirected to homepage when pressing Enter key");
         Assert.assertEquals(driver.getCurrentUrl(), "https://demo1.cybersoft.edu.vn/",
                 "Enter key did not submit login");
+
+
+        // clean up: log out if logged in
+        if (homePage.getTopBarNavigation().isLogoutLinkDisplayed()) {
+            homePage.getTopBarNavigation().clickLogoutButton();
+            confirmModal.waitLogoutConfirmModalVisible();
+            confirmModal.clickOkButton();
+            confirmModal.waitOkModalClosed();
+
+        }
     }
+
 
 }
 
