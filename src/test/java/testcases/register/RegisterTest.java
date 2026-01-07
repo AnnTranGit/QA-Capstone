@@ -179,7 +179,7 @@ public class RegisterTest extends BaseTest {
         ExtentReportManager.info("TC_Negative_Register_Test_Cases - " + testcaseName);
         LOG.info("TC_Negative_Register_Test_Cases - " + testcaseName);
         // Enter registration details
-        ExtentReportManager.info("Fill in" + username + email + password + fullName);
+        ExtentReportManager.info("Fill in username:" + username + ", email: " + email + ", password" + password + ", full name:" + fullName);
         LOG.info("Fill in username:" + username + ", email: " + email + ", password" + password + ", full name:" + fullName);
         registerPage.fillForm(username, email, password, confirmPassword, fullName);
         // Click register button

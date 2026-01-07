@@ -24,8 +24,6 @@ public class LoginTest extends BaseTest {
     private final String VALID_USER = "tester_1767361653915";
     private final String VALID_PASS = "StrongPass123";
     String expectedProfileName = "John S";
-    private final String INVALID_USER = "wrong123";
-    private final String INVALID_PASS = "wrong123";
 
 
     @BeforeClass
@@ -123,10 +121,12 @@ public class LoginTest extends BaseTest {
     public void TC_InvalidCredentials_ShowsError() {
         ExtentReportManager.info("Step 2: enter account with invalid data");
         LOG.info("Step 2: enter account with invalid data");
+        String INVALID_USER = "wrong123";
         loginPage.enterAccount(INVALID_USER);
 
         ExtentReportManager.info("Step 3: enter password with invalid data");
         LOG.info("Step 3: enter password with invalid data");
+        String INVALID_PASS = "wrong123";
         loginPage.enterPassword(INVALID_PASS);
 
         ExtentReportManager.info("Step 4: Click Login");
